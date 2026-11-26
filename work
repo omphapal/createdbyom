@@ -18,11 +18,11 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Selected Work &amp; Projects | Omkar Phapal — Freelance Developer"/>
 <meta property="og:description" content="Explore full-stack web applications, Java and Spring Boot backend systems, REST APIs, and GitHub projects by Omkar Phapal."/>
-<meta property="og:image" content="/assets/og-preview.svg"/>
+<meta property="og:image" content="/assets/og-preview.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Selected Work &amp; Projects | Omkar Phapal — Freelance Developer"/>
 <meta name="twitter:description" content="Explore full-stack web applications, Java and Spring Boot backend systems, REST APIs, and GitHub projects by Omkar Phapal."/>
-<meta name="twitter:image" content="/assets/og-preview.svg"/>
+<meta name="twitter:image" content="/assets/og-preview.png"/>
 <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/>
 <link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.shared.4bb5636f9.min.css" rel="stylesheet" type="text/css" integrity="sha384-S7Vjb5HQzqOLaOcpLlsIPqv3UsN3z4Tv6minJv3OWfsLMewHZ29QHys3LLzYNNmg" crossorigin="anonymous"/>
 <link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.6a87a8cb59ab090b5b51f0a9.a62122d71.opt.min.css" rel="stylesheet" type="text/css" integrity="sha384-piEi1x45n4dnPnTB2StFLpZQpvNDoPe9Ima1RblDSG1300om3WKbnsSUikiHcx8m" crossorigin="anonymous"/>
@@ -897,8 +897,7 @@ window.VT_CONFIG = {
 
 <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: dark)">
-<meta name="msapplication-navbutton-color" content="#F7F6F2">
-<meta name="apple-mobile-web-app-status-bar-style" content="#F7F6F2"><style>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
 /* Lite mode */
 html.is-lite-3d #glcanvas { background: center / cover no-repeat url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-16x9.webp); }
 @media (min-width: 992px) and (max-aspect-ratio: 1/1) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-portrait.webp); } }
@@ -2115,7 +2114,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
       <a href="/about-us" class="text-navlink is-wide-only">About</a>
       <a href="/#services" class="text-navlink is-wide-only">Services</a>
       <a href="/#process" class="text-navlink is-wide-only">Process</a>
-      <a href="#" data-op-open-cv="1" class="text-navlink is-wide-only">See CV</a>
+      <a href="/Omkar-Phapal-CV.pdf" target="_blank" rel="noopener" data-op-open-cv="1" class="text-navlink is-wide-only">See CV</a>
       <a href="/#contact" class="text-navlink is-wide-only">Contact</a>
     </div>
     <a aria-expanded="false" data-nav-open="menu" aria-haspopup="true" aria-controls="nav-menu-dropdown" href="#nav-menu-dropdown" class="header__menu w-inline-block">

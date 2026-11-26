@@ -18,11 +18,11 @@
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Omkar Phapal — Freelance Developer | Java, Spring Boot &amp; Web Solutions"/>
 <meta property="og:description" content="Omkar Phapal is a BCA graduate and freelance developer building modern websites, Java &amp; Spring Boot backends, REST APIs, and business software."/>
-<meta property="og:image" content="/assets/og-preview.svg"/>
+<meta property="og:image" content="/assets/og-preview.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Omkar Phapal — Freelance Developer | Java, Spring Boot &amp; Web Solutions"/>
 <meta name="twitter:description" content="Omkar Phapal is a BCA graduate and freelance developer building modern websites, Java &amp; Spring Boot backends, REST APIs, and business software."/>
-<meta name="twitter:image" content="/assets/og-preview.svg"/>
+<meta name="twitter:image" content="/assets/og-preview.png"/>
 <link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/>
 <link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.shared.4bb5636f9.min.css" rel="stylesheet" type="text/css" integrity="sha384-S7Vjb5HQzqOLaOcpLlsIPqv3UsN3z4Tv6minJv3OWfsLMewHZ29QHys3LLzYNNmg" crossorigin="anonymous"/>
 <link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.6a8613e0038c16471e17ff7f.70e5149b1.opt.min.css" rel="stylesheet" type="text/css" integrity="sha384-cOUUmxGTo+BcmGFA+u+fib8k0KT6vt1a2y2TSxLzRHbq/CDynfp7l5PI3ek79Yn2" crossorigin="anonymous"/>
@@ -897,8 +897,7 @@ window.VT_CONFIG = {
 
 <meta name="theme-color" content="#ede1fd" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#ede1fd" media="(prefers-color-scheme: dark)">
-<meta name="msapplication-navbutton-color" content="#ede1fd">
-<meta name="apple-mobile-web-app-status-bar-style" content="#ede1fd"><style>
+<meta name="apple-mobile-web-app-status-bar-style" content="default"><style>
 /* Lite mode */
 html.is-lite-3d #glcanvas { background: center / cover no-repeat url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-16x9.webp); }
 @media (min-width: 992px) and (max-aspect-ratio: 1/1) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-portrait.webp); } }
@@ -2446,7 +2445,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
       <a href="/about-us" class="text-navlink is-wide-only">About</a>
       <a href="/#services" class="text-navlink is-wide-only">Services</a>
       <a href="/#process" class="text-navlink is-wide-only">Process</a>
-      <a href="#" data-op-open-cv="1" class="text-navlink is-wide-only">See CV</a>
+      <a href="/Omkar-Phapal-CV.pdf" target="_blank" rel="noopener" data-op-open-cv="1" class="text-navlink is-wide-only">See CV</a>
       <a href="/#contact" class="text-navlink is-wide-only">Contact</a>
     </div>
     <a aria-expanded="false" data-nav-open="menu" aria-haspopup="true" aria-controls="nav-menu-dropdown" href="#nav-menu-dropdown" class="header__menu w-inline-block">
@@ -2561,7 +2560,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
               <label for="nf-message" class="text-cta field__label">Project description</label>
               <div class="text-body-s field__error">Please describe your project</div>
             </div>
-            <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+            <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"></label>
             <input type="hidden" name="project_brief" value=""/>
           </div>
           <div class="form-submit is-start">
@@ -2596,7 +2595,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
     <div class="hero-statement__mail"></div>
   </div>
   <div class="hero-statement__visual-clip" aria-hidden="true">
-    <img src="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/6a8e401c1cb7b9a430afd359_image.avif" loading="eager" alt="Developer workspace backdrop" class="hero-statement__visual"/>
+    <img src="/assets/hero-backdrop.avif" width="1920" height="1080" loading="eager" fetchpriority="high" alt="Developer workspace backdrop" class="hero-statement__visual"/>
   </div>
   <div class="hero-statement__logos">
     <div class="text-subtitle">CORE TECHNOLOGIES</div>
@@ -2653,6 +2652,98 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
     </div>
   </section>
 </div>
+
+
+<!-- =======================================================================
+     NEW EDITORIAL STORYTELLING SECTION (AFTER OFFICE ANIMATION)
+     Protected: Appears strictly after .statement--wrapper.
+     ======================================================================= -->
+<section id="storytelling" class="op-story-section" aria-labelledby="op-story-heading">
+  <div class="op-story-container">
+    <div class="op-story-header" data-op-reveal>
+      <div class="op-availability-badge op-availability-badge--dark">
+        <span class="op-availability-dot" aria-hidden="true"></span>
+        <span>Engineering &amp; Architecture</span>
+      </div>
+      <h2 id="op-story-heading" class="op-story-title">From Ideas to Working Software.</h2>
+      <p class="op-story-lead">I build the systems behind digital products — from dependable backend APIs and connected databases to polished interfaces and practical automation.</p>
+    </div>
+
+    <div class="op-story-grid">
+      <!-- PANEL 01: Backend Engineering -->
+      <article class="op-story-card" data-op-reveal>
+        <div class="op-story-media">
+          <picture>
+            <source srcset="/assets/portfolio/story-backend.png" type="image/png"/>
+            <img src="/assets/portfolio/story-backend.svg" width="900" height="600" loading="lazy" decoding="async" alt="Backend architectural topology and REST services" class="op-story-img"/>
+          </picture>
+          <div class="op-story-tag">Panel 01</div>
+        </div>
+        <div class="op-story-body">
+          <h3 class="op-story-card__title">The logic behind the product.</h3>
+          <p class="op-story-card__desc">Reliable backends demand clean separation of concerns, structured domain models, and resilient communication contracts. I develop Java &amp; Spring Boot architectures with strict REST APIs, secure token verification, and predictable SQL persistence.</p>
+          <ul class="op-story-list">
+            <li>Structured Spring Boot services &amp; layered MVC controllers</li>
+            <li>Robust RESTful endpoints with DTO validation and error handling</li>
+            <li>Spring Security token pipelines &amp; role-based authorizations</li>
+            <li>Optimized database schemas, transactions &amp; connection pools</li>
+          </ul>
+          <div class="op-tags" style="margin-top:1.25rem;">
+            <span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>Spring Security</span><span>MySQL / PostgreSQL</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL 02: Connected Applications -->
+      <article class="op-story-card" data-op-reveal>
+        <div class="op-story-media">
+          <picture>
+            <source srcset="/assets/portfolio/story-application.png" type="image/png"/>
+            <img src="/assets/portfolio/story-application.svg" width="900" height="600" loading="lazy" decoding="async" alt="Interactive dashboard application interface with telemetry charts" class="op-story-img"/>
+          </picture>
+          <div class="op-story-tag">Panel 02</div>
+        </div>
+        <div class="op-story-body">
+          <h3 class="op-story-card__title">Where interfaces meet intelligent systems.</h3>
+          <p class="op-story-card__desc">A powerful backend is only as valuable as the user's ability to interact with it seamlessly. I build responsive frontends and web applications in React and modern JavaScript that synchronize directly with server states and live data feeds.</p>
+          <ul class="op-story-list">
+            <li>Single-page applications with clean component modularity</li>
+            <li>Real-time event subscriptions and WebSocket telemetry</li>
+            <li>Accessible forms, instant client validation &amp; feedback states</li>
+            <li>Consistent brand aesthetics with fluid responsive layouts</li>
+          </ul>
+          <div class="op-tags" style="margin-top:1.25rem;">
+            <span>React</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>WebSockets</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PANEL 03: Automation and Workflows -->
+      <article class="op-story-card" data-op-reveal>
+        <div class="op-story-media">
+          <picture>
+            <source srcset="/assets/portfolio/story-automation.png" type="image/png"/>
+            <img src="/assets/portfolio/story-automation.svg" width="900" height="600" loading="lazy" decoding="async" alt="Multi-stage automation event pipeline" class="op-story-img"/>
+          </picture>
+          <div class="op-story-tag">Panel 03</div>
+        </div>
+        <div class="op-story-body">
+          <h3 class="op-story-card__title">Less manual work. Better systems.</h3>
+          <p class="op-story-card__desc">Modern operations cannot afford manual data re-entry or untracked task handoffs. I design and build automated event pipelines, background job dispatchers, and notification relays that keep operational workflows moving accurately.</p>
+          <ul class="op-story-list">
+            <li>Event-triggered webhooks and scheduled batch jobs</li>
+            <li>Reliable message deduplication, retries &amp; failure isolation</li>
+            <li>Automated alerts, email notifications &amp; audit logging</li>
+            <li>Business workflow tools tailored to practical operational models</li>
+          </ul>
+          <div class="op-tags" style="margin-top:1.25rem;">
+            <span>Automations</span><span>REST Webhooks</span><span>Redis</span><span>Docker</span><span>Kafka</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="op-intro" id="intro" aria-labelledby="op-intro-title">
   <div class="op-intro__inner">
@@ -2866,7 +2957,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
   <h3 class="op-project-card__title">Learning Management System (LMS)</h3>
   <p class="op-project-card__desc">A full-stack Learning Management System uniting learning content, assignments, attendance, assessments, analytics, and placement workflows behind a centralized API gateway.</p>
   <p class="op-project-card__problem"><strong>Problem solved:</strong> Training institutes and cohorts often juggle disconnected spreadsheets for attendance, assignments, assessments, and placement records.</p>
-  <ul class="op-project-card__features"><li>Centralized API gateway routing across modular services</li><li>Course learning, assignment, and assessment modules</li><li>Attendance tracking and student progress analytics</li></ul>
+  <ul class="op-project-card__features"><li>Centralized API gateway routing across modular Java &amp; Spring Boot services</li><li>Course learning curriculum, assignment submission, and grading pipelines</li><li>Daily attendance tracking with automated student progress analytics</li><li>Dedicated career placement module for resume readiness and cohort tracking</li><li>Kafka event streaming and Redis caching for high-concurrency student access</li></ul>
   <div class="op-tags"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>React</span><span>MySQL</span><span>Kafka</span><span>Redis</span></div>
   <div class="op-project-card__actions">
     <a class="op-link-btn op-link-btn--accent" href="/project/learning-management-system">View Case Study</a>
@@ -2881,7 +2972,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
   <h3 class="op-project-card__title">CRM Business Application</h3>
   <p class="op-project-card__desc">A practical Customer Relationship Management application built to organize leads, client communications, follow-up schedules, and pipeline stages in one place.</p>
   <p class="op-project-card__problem"><strong>Problem solved:</strong> Small businesses lose momentum when client enquiries, follow-up dates, and interaction notes live across scattered spreadsheets and inboxes.</p>
-  <ul class="op-project-card__features"><li>Lead and customer records with clear pipeline status</li><li>Interaction history and follow-up tracking</li><li>Validated REST endpoints for filtering and updates</li></ul>
+  <ul class="op-project-card__features"><li>Lead and contact records with multi-stage sales pipeline filtering</li><li>Interaction history timeline with automated follow-up calendar alerts</li><li>RESTful endpoints with DTO validation and transactional SQL persistence</li><li>Admin dashboard with real-time conversion rates and lead volume metrics</li><li>Role-based access controls protecting client data and team records</li></ul>
   <div class="op-tags"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>SQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
   <div class="op-project-card__actions">
     <a class="op-link-btn op-link-btn--accent" href="/project/crm-application">View Case Study</a>
@@ -3056,6 +3147,82 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
   </div>
 </section>
 
+
+<!-- =======================================================================
+     OPEN SOURCE & GITHUB SECTION
+     Verified repositories from github.com/omphapal
+     ======================================================================= -->
+<section id="open-source" class="op-section op-section--white" aria-labelledby="op-os-heading">
+  <div class="op-section__inner">
+    <div class="op-section__header" data-op-reveal>
+      <div>
+        <p class="op-section__eyebrow">Public Repositories</p>
+        <h2 id="op-os-heading" class="op-section__title">Open Source &amp; GitHub Activity</h2>
+        <p class="op-section__subtitle">Explore open-source backend codebases, CLI utilities, and developer projects hosted publicly on GitHub.</p>
+      </div>
+      <a href="https://github.com/omphapal" target="_blank" rel="noopener" class="op-btn op-btn--secondary">Visit GitHub Profile ↗</a>
+    </div>
+
+    <!-- GitHub Metrics Strip -->
+    <div class="op-stats-grid" data-op-reveal style="display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1.5rem;margin-bottom:3rem;">
+      <div class="op-stat-card" style="background:#f9f8f6;border:1px solid #ebe6df;border-radius:14px;padding:1.5rem;">
+        <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:#181126;font-family:var(--op-display);">70+</div>
+        <div style="font-size:0.95rem;color:#6b6277;margin-top:0.25rem;">Public Repositories</div>
+      </div>
+      <div class="op-stat-card" style="background:#f9f8f6;border:1px solid #ebe6df;border-radius:14px;padding:1.5rem;">
+        <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:#181126;font-family:var(--op-display);">Java &amp; Python</div>
+        <div style="font-size:0.95rem;color:#6b6277;margin-top:0.25rem;">Core Languages</div>
+      </div>
+      <div class="op-stat-card" style="background:#f9f8f6;border:1px solid #ebe6df;border-radius:14px;padding:1.5rem;">
+        <div style="font-size:clamp(1.75rem,3vw,2.5rem);font-weight:700;color:#181126;font-family:var(--op-display);">Active</div>
+        <div style="font-size:0.95rem;color:#6b6277;margin-top:0.25rem;">Continuous Commits</div>
+      </div>
+    </div>
+
+    <!-- Featured Repos Grid -->
+    <div class="op-project-grid" data-op-reveal>
+      <article class="op-project-card">
+        <div class="op-project-card__head">
+          <span class="op-project-status is-live">Verified</span>
+          <span class="op-project-meta">Java / Spring Boot</span>
+        </div>
+        <h3 class="op-project-card__title">createdbyom</h3>
+        <p class="op-project-card__desc">Official production portfolio repository featuring Cables.gl 3D WebGL engine, custom video texture streaming, and Spring Boot REST backend integration.</p>
+        <div class="op-tags"><span>HTML5</span><span>CSS3</span><span>WebGL</span><span>Java</span><span>Spring Boot</span></div>
+        <div class="op-project-card__actions">
+          <a class="op-link-btn op-link-btn--accent" href="https://github.com/omphapal/createdbyom" target="_blank" rel="noopener">View Repository ↗</a>
+        </div>
+      </article>
+
+      <article class="op-project-card">
+        <div class="op-project-card__head">
+          <span class="op-project-status is-live">Verified</span>
+          <span class="op-project-meta">Java</span>
+        </div>
+        <h3 class="op-project-card__title">lms-project</h3>
+        <p class="op-project-card__desc">Comprehensive Learning Management System repository managing student cohorts, curricula, assignment grading, and placement readiness tracking.</p>
+        <div class="op-tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>REST APIs</span></div>
+        <div class="op-project-card__actions">
+          <a class="op-link-btn op-link-btn--accent" href="https://github.com/omphapal/lms-project" target="_blank" rel="noopener">View Repository ↗</a>
+        </div>
+      </article>
+
+      <article class="op-project-card">
+        <div class="op-project-card__head">
+          <span class="op-project-status is-live">Verified</span>
+          <span class="op-project-meta">Python</span>
+        </div>
+        <h3 class="op-project-card__title">duplicate-file-name-finder</h3>
+        <p class="op-project-card__desc">Lightweight automation script recursively inspecting directory trees, calculating checksums, and reporting duplicated filenames for rapid cleanup.</p>
+        <div class="op-tags"><span>Python</span><span>CLI</span><span>File Systems</span><span>Automation</span></div>
+        <div class="op-project-card__actions">
+          <a class="op-link-btn op-link-btn--accent" href="https://github.com/omphapal/duplicate-file-name-finder" target="_blank" rel="noopener">View Repository ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="op-section op-section--white">
   <div class="op-section__inner">
     <div class="op-section__header" data-op-reveal>
@@ -3145,6 +3312,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
                 <option value="1–3 months">1–3 months</option>
                 <option value="3–6 months">3–6 months</option>
                 <option value="Flexible">Flexible</option>
+                <option value="Not sure">Not sure / Let's discuss</option>
               </select>
             </div>
             <div class="op-field">
@@ -3156,7 +3324,7 @@ html.is-lite-3d .hero-statement__statement { position: relative; }
               <textarea id="cf-message" name="message" data-name="Message" maxlength="5000" placeholder="Tell me what you want to build, key features, and any links or deadlines." required=""></textarea>
             </div>
           </div>
-          <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+          <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"></label>
           <input type="hidden" name="project_brief" value=""/>
           <div style="margin-top: 1.25rem;">
             <button type="submit" class="op-btn op-btn--primary">Send Project Inquiry →</button>

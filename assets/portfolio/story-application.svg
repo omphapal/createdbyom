@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" fill="none">
+  <defs>
+    <linearGradient id="p2-bg" x1="0" y1="0" x2="900" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#110d21"/>
+      <stop offset="0.6" stop-color="#1b1430"/>
+      <stop offset="1" stop-color="#231740"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" rx="16" fill="url(#p2-bg)"/>
+
+  <!-- Desktop Browser Frame -->
+  <g transform="translate(100, 70)">
+    <!-- Window chrome -->
+    <rect width="700" height="460" rx="14" fill="#181229" stroke="#5d438c" stroke-width="1.5"/>
+    <rect width="700" height="42" rx="14" fill="#201736"/>
+    <path d="M0 42H700" stroke="#4a3570" stroke-width="1"/>
+    <!-- Dots -->
+    <circle cx="26" cy="21" r="5" fill="#f87171" opacity="0.8"/>
+    <circle cx="44" cy="21" r="5" fill="#fbbf24" opacity="0.8"/>
+    <circle cx="62" cy="21" r="5" fill="#34d399" opacity="0.8"/>
+    <!-- Address pill -->
+    <rect x="180" y="10" width="340" height="22" rx="6" fill="#130c24"/>
+    <text x="350" y="25" fill="#bfaee6" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">app.omkarphapal.dev / dashboard</text>
+
+    <!-- Sidebar -->
+    <rect x="0" y="42" width="160" height="418" fill="#150f24"/>
+    <path d="M160 42V460" stroke="#372654" stroke-width="1"/>
+    <rect x="20" y="70" width="120" height="24" rx="6" fill="#7a27f8" fill-opacity="0.3"/>
+    <text x="32" y="86" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Overview</text>
+    <text x="32" y="126" fill="#8f7fa8" font-family="system-ui, sans-serif" font-size="12">Endpoints</text>
+    <text x="32" y="162" fill="#8f7fa8" font-family="system-ui, sans-serif" font-size="12">Database</text>
+    <text x="32" y="198" fill="#8f7fa8" font-family="system-ui, sans-serif" font-size="12">Telemetry</text>
+
+    <!-- Content area -->
+    <rect x="190" y="70" width="230" height="110" rx="10" fill="#201738" stroke="#48336e" stroke-width="1"/>
+    <text x="210" y="98" fill="#ede1fd" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Active API Requests</text>
+    <text x="210" y="142" fill="#ffffff" font-family="system-ui, sans-serif" font-size="28" font-weight="700">14,280/m</text>
+
+    <rect x="440" y="70" width="230" height="110" rx="10" fill="#201738" stroke="#48336e" stroke-width="1"/>
+    <text x="460" y="98" fill="#ede1fd" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Avg Response Time</text>
+    <text x="460" y="142" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="28" font-weight="700">18.4 ms</text>
+
+    <!-- Chart -->
+    <rect x="190" y="205" width="480" height="215" rx="10" fill="#1b122f" stroke="#412e63" stroke-width="1"/>
+    <path d="M220 370 Q 300 290 380 320 T 520 250 T 640 280" stroke="#9d6ef7" stroke-width="3" fill="none"/>
+    <path d="M220 370 Q 300 290 380 320 T 520 250 T 640 280 L 640 400 L 220 400 Z" fill="#7a27f8" fill-opacity="0.12"/>
+  </g>
+</svg>

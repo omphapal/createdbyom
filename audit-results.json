@@ -1,0 +1,2480 @@
+[
+  {
+    "page": "home",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 285,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 1108,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 1108,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "Access to fetch at 'https://dp-code-terminal.vercel.app/api/terminal' from origin 'null' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "home",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": true,
+      "canvasVisible": true
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#studio' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "[core_patch] [instancing error] Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.MainLoop_v2 TypeError: Cannot read properties of null (reading 'classList')\n    at new Ops.Gl.MainLoop_v2 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:4335)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.MainLoop_v2",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_patch] [instancing error] Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] INSTANCE_ERR Instancing Error: Ops.Gl.Texture_v3 TypeError: Cannot read properties of null (reading 'createTexture')\n    at new M (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:178391)\n    at M.getEmptyTexture (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:2:191427)\n    at new Ops.Gl.Texture_v3 (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:305:13894)\n    at y.createOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57131)\n    at y.addOp (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:57600)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:62814)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)",
+      "[core_patch] addop: op could not be created:  Ops.Gl.Texture_v3",
+      "[core_port] exception in  Ops.Devices.Mouse.Mouse_v4",
+      "[core_port] TypeError: Cannot read properties of null (reading 'parentElement')\n    at ut.R [as onChange] (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:149:23251)\n    at ut.forceChange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:35467)\n    at ut.setValue (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:34657)\n    at ut.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:33744)\n    at indexPort.set (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:73453)\n    at y.deSerialize (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:63325)\n    at Object.cb (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:54444)\n    at i.onreadystatechange (https://d2my2wpsc41l6t.cloudfront.net/tdp26/js/combined-20261106-205544.br.js:1:28451)"
+    ]
+  },
+  {
+    "page": "work",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "work",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "about",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": []
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 211,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "dependency-x-ray",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 211,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "signalzero",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 211,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "hackmate",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 211,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 256,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 256,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "lms",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "320",
+    "width": 320,
+    "metrics": {
+      "scrollWidth": 320,
+      "innerWidth": 320,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 211,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "360",
+    "width": 360,
+    "metrics": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "390",
+    "width": 390,
+    "metrics": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "430",
+    "width": 430,
+    "metrics": {
+      "scrollWidth": 430,
+      "innerWidth": 430,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "768",
+    "width": 768,
+    "metrics": {
+      "scrollWidth": 768,
+      "innerWidth": 768,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "834",
+    "width": 834,
+    "metrics": {
+      "scrollWidth": 834,
+      "innerWidth": 834,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "1024",
+    "width": 1024,
+    "metrics": {
+      "scrollWidth": 1024,
+      "innerWidth": 1024,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "1280",
+    "width": 1280,
+    "metrics": {
+      "scrollWidth": 1280,
+      "innerWidth": 1280,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 254,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "1440",
+    "width": 1440,
+    "metrics": {
+      "scrollWidth": 1440,
+      "innerWidth": 1440,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "1920",
+    "width": 1920,
+    "metrics": {
+      "scrollWidth": 1920,
+      "innerWidth": 1920,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "2560",
+    "width": 2560,
+    "metrics": {
+      "scrollWidth": 2560,
+      "innerWidth": 2560,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  },
+  {
+    "page": "crm",
+    "viewport": "844x390-landscape",
+    "width": 844,
+    "metrics": {
+      "scrollWidth": 844,
+      "innerWidth": 844,
+      "hasOverflow": false,
+      "overflowEls": [],
+      "smallTextCount": 0,
+      "canvasPresent": false,
+      "canvasVisible": false
+    },
+    "consoleErrors": [
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/work' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Failed to load resource: net::ERR_FILE_NOT_FOUND",
+      "Access to fetch at 'file:///C:/about-us' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED",
+      "Access to fetch at 'file:///C:/#services' from origin 'null' has been blocked by CORS policy: Cross origin requests are only supported for protocol schemes: chrome, chrome-experimental-site-token-provider, chrome-extension, chrome-untrusted, data, http, https, isolated-app.",
+      "Failed to load resource: net::ERR_FAILED"
+    ]
+  }
+]
