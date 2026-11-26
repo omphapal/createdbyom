@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /backend/
+
+# Add your production Sitemap URL once your public domain is configured:
+# Sitemap: https://your-domain.example/sitemap.xml

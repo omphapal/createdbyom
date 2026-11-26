@@ -1,0 +1,22 @@
+{
+  "name": "Omkar Phapal — Freelance Developer",
+  "short_name": "Omkar Phapal",
+  "description": "Freelance Java, Spring Boot, REST API, and full-stack web developer portfolio of Omkar Phapal.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ede1fd",
+  "theme_color": "#6f38d8",
+  "icons": [
+    {
+      "src": "/op-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

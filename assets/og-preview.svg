@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="og-title og-desc">
+  <title id="og-title">Omkar Phapal — Freelance Developer</title>
+  <desc id="og-desc">BCA Graduate | Java &amp; Spring Boot Developer building websites, backend applications, REST APIs, and practical business software.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05010e"/>
+      <stop offset="60%" stop-color="#190e31"/>
+      <stop offset="100%" stop-color="#2b1754"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="22%" r="48%">
+      <stop offset="0%" stop-color="#7a27f8" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7a27f8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="56" y="56" width="1088" height="518" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.14"/>
+
+  <rect x="96" y="100" width="58" height="58" rx="14" fill="#6f38d8"/>
+  <text x="125" y="137" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" text-anchor="middle">OP</text>
+  <text x="174" y="137" fill="#ede1fd" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600" letter-spacing="2">OMKAR PHAPAL — FREELANCE DEVELOPER</text>
+
+  <text x="96" y="255" fill="#ffffff" font-family="Georgia, serif" font-size="60" font-weight="600">Turning Ideas Into</text>
+  <text x="96" y="330" fill="#d9c6ff" font-family="Georgia, serif" font-size="60" font-weight="600">Powerful Digital Experiences.</text>
+
+  <text x="96" y="405" fill="#d4cde3" font-family="system-ui, -apple-system, sans-serif" font-size="26">BCA Graduate  •  Java &amp; Spring Boot Developer</text>
+
+  <g transform="translate(96, 458)">
+    <rect x="0" y="0" width="110" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="55" y="29" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle">Java</text>
+
+    <rect x="126" y="0" width="166" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="209" y="29" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle">Spring Boot</text>
+
+    <rect x="308" y="0" width="150" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="383" y="29" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle">REST APIs</text>
+
+    <rect x="474" y="0" width="96" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="522" y="29" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle">SQL</text>
+
+    <rect x="586" y="0" width="214" height="44" rx="22" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.24"/>
+    <text x="693" y="29" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" text-anchor="middle">HTML • CSS • JS</text>
+  </g>
+</svg>
