@@ -9,85 +9,50 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 2633 >>
+<< /Length 3958 >>
 stream
 BT
-/F1 18 Tf
-50 750 Td
-(OMKAR PHAPAL) Tj
-/F2 10 Tf
+/F1 18 Tf 50 780 Td (OMKAR PHAPAL) Tj
+/F2 9.5 Tf 0 -16 Td (Omphapal181@gmail.com | Phone: 8208497838 | Pune, Maharashtra | linkedin.com/in/omkarphapal01) Tj
 0 -18 Td
-(BCA Graduate | Java & Spring Boot Developer | Freelance Software Engineer) Tj
+/F1 11 Tf (SUMMARY) Tj
+/F2 8.5 Tf 0 -13 Td (Java and Spring Boot developer \(BCA, 2026\) with hands-on experience designing microservices, secure REST APIs and event-driven systems using) Tj
+0 -11 Td (Kafka, Docker and Kubernetes. Recent projects span a Maven dependency vulnerability scanner and an offline-first Android SOS relay app. Seeking a) Tj
+0 -11 Td (backend or full-stack role building secure, reliable software.) Tj
+0 -18 Td
+/F1 11 Tf (TECHNICAL SKILLS) Tj
+/F2 8.5 Tf 0 -13 Td (Languages: Java, Kotlin, SQL, HTML5, CSS3, JavaScript) Tj
+0 -11 Td (Frameworks & Libraries: Spring Boot, Spring MVC, Spring Security, Spring Data JPA, React, Vite, RESTful APIs, Jetpack Compose) Tj
+0 -11 Td (Security & Mobile: Vulnerability Scanning \(OSV / NVD, CVE\), Dependency Graph Analysis, Android, Bluetooth LE, Wi-Fi Direct, Store-and-Forward Messaging) Tj
+0 -11 Td (Architecture: System Design, Microservices Architecture, API Gateway, Service Discovery \(Eureka\), Event-Driven Design) Tj
+0 -11 Td (Databases & Storage: MySQL, SQLite \(Room\), Redis, MinIO \(Object Storage\), Elasticsearch) Tj
+0 -11 Td (Messaging & Integration: Apache Kafka, JWT Authentication, Postman) Tj
+0 -11 Td (DevOps & Tools: Maven, Docker, Kubernetes, GitHub Actions \(CI/CD\), Git, IntelliJ IDEA, Android Studio, Eclipse IDE) Tj
+0 -11 Td (Core Java: OOPs, Collections, Multithreading, Exception Handling | Soft Skills: Communication, Problem-solving, Time Management) Tj
+0 -18 Td
+/F1 11 Tf (EDUCATION) Tj
+/F2 8.5 Tf 0 -13 Td (Bachelor Of Computer Application \(BCA\) - Pune | Tilak Maharashtra Vidyapeeth - CGPA: 7.23 \(2026\)) Tj
+0 -11 Td (Higher Secondary Certificate \(HSC\) - Majalgaon | Shri Mahesh Vidyalaya - Percentage: 88% \(2021\)) Tj
+0 -18 Td
+/F1 11 Tf (PROJECTS) Tj
+/F2 9 Tf 0 -13 Td (DependencyX-Ray Pro | Java, Spring Boot, Maven, React, MySQL, Docker) Tj
+/F2 8.5 Tf 0 -11 Td (- Built a full-stack web application that scans an uploaded Java project \(ZIP, standalone pom.xml or Git repository\) and reports vulnerable) Tj
+0 -10 Td (  dependencies together with the risk, supporting evidence and a recommended fix.) Tj
+0 -11 Td (- Wrote a Maven analyzer that parses the project and builds a complete inventory of direct and transitive dependencies with versions,) Tj
+0 -10 Td (  then matches each one against public security advisories \(OSV / NVD\) to flag affected version ranges.) Tj
+0 -11 Td (- Designed an explainable risk engine that prioritizes findings by severity, dependency path, fix availability and evidence, and a Fix Advisor.) Tj
+0 -11 Td (- Created an interactive dependency graph in React with downloadable scan report; ran analysis inside restricted Docker container.) Tj
 0 -14 Td
-(Pune, Maharashtra, India | Email: Omphapal181@gmail.com | Phone: +91 82084 97838) Tj
-0 -12 Td
-(GitHub: github.com/omphapal | LinkedIn: linkedin.com/in/omkarphapal01) Tj
-0 -24 Td
-/F1 12 Tf
-(PROFESSIONAL PROFILE) Tj
-/F2 10 Tf
-0 -14 Td
-(Dedicated software developer specializing in building modern web applications, scalable Java & Spring Boot) Tj
-0 -12 Td
-(backend architectures, RESTful APIs, and relational database systems. BCA graduate with practical experience) Tj
-0 -12 Td
-(in clean software engineering, problem-solving, and delivering tailored digital solutions.) Tj
-0 -22 Td
-/F1 12 Tf
-(TECHNICAL SKILLS) Tj
-/F2 10 Tf
-0 -14 Td
-(- Backend: Java, Spring Boot, Spring MVC, REST APIs, Microservices, Maven) Tj
-0 -12 Td
-(- Database: SQL, MySQL, Relational Database Design, JPA / Hibernate, Query Optimization) Tj
-0 -12 Td
-(- Frontend: HTML5, CSS3, JavaScript, Responsive Web Design, Component Architecture) Tj
-0 -12 Td
-(- Tools & Workflow: Git, GitHub, IntelliJ IDEA, VS Code, Postman, Linux) Tj
-0 -22 Td
-/F1 12 Tf
-(EDUCATION) Tj
-/F2 10 Tf
-0 -14 Td
-(Bachelor of Computer Applications (BCA)) Tj
-0 -12 Td
-(Tilak Maharashtra Vidyapeeth, Pune, Maharashtra) Tj
-0 -22 Td
-/F1 12 Tf
-(FEATURED PROJECTS) Tj
-/F2 10 Tf
-0 -14 Td
-(1. Learning Management System (LMS): Modular full-stack learning platform with API gateway,) Tj
-0 -12 Td
-(   course delivery, assessment tracking, and student attendance analytics in Java & Spring Boot.) Tj
-0 -14 Td
-(2. CRM Application: Business customer relationship & lead pipeline manager featuring contact) Tj
-0 -12 Td
-(   tracking, interaction logs, and automated follow-up workflows.) Tj
-0 -14 Td
-(3. Payment Gateway Platform: Secure transaction processing service with HMAC signature verification,) Tj
-0 -12 Td
-(   idempotent execution, and webhook delivery infrastructure.) Tj
-0 -14 Td
-(4. Expense Tracker API: RESTful personal and business expense tracking backend with category filters,) Tj
-0 -12 Td
-(   date-range summaries, and token-based authentication.) Tj
-0 -14 Td
-(5. Duplicate File Name Finder: High-performance desktop utility for recursive directory scanning) Tj
-0 -12 Td
-(   and filename collision resolution.) Tj
-0 -24 Td
-/F1 12 Tf
-(SERVICES OFFERED) Tj
-/F2 10 Tf
-0 -14 Td
-(- Full-Stack Website & Web Application Development) Tj
-0 -12 Td
-(- Java & Spring Boot Backend Architecture & REST APIs) Tj
-0 -12 Td
-(- Business Management Systems (CRM, Admin Portals, Workflows)) Tj
-0 -12 Td
-(- Database Design, Schema Modeling & SQL Optimization) Tj
+/F2 9 Tf (SignalZero Pro | Kotlin, Android, Room \(SQLite\), Spring Boot, Bluetooth LE, Wi-Fi Direct) Tj
+/F2 8.5 Tf 0 -11 Td (- Built an offline-first Android app that lets users create SOS messages \(type, text, timestamp, optional location\) and send them) Tj
+0 -10 Td (  without internet or cellular coverage using QR, Bluetooth and Wi-Fi Direct transfer between nearby devices.) Tj
+0 -11 Td (- Implemented a store-and-forward relay in which each message carries a unique ID, creation time, expiry, priority and integrity protection.) Tj
+0 -11 Td (- Stored messages, contacts, and cached maps locally in Room; secured messages with encryption and signing-key authentication.) Tj
+0 -11 Td (- Added an optional Spring Boot sync backend that synchronizes messages when connectivity returns.) Tj
+0 -18 Td
+/F1 11 Tf (COURSES AND CERTIFICATIONS) Tj
+/F2 8.5 Tf 0 -13 Td (- Problem Solving \(Basic\) Certification - HackerRank - logic building, loops, conditionals, and basic algorithms) Tj
+0 -11 Td (- Hands-on experience building and deploying web applications using Java, Spring Boot, and SQL) Tj
 ET
 endstream
 endobj
@@ -104,10 +69,10 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000251 00000 n 
-0000002936 00000 n 
-0000003011 00000 n 
+0000004261 00000 n 
+0000004336 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-3081
+4406
 %%EOF

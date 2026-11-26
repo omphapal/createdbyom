@@ -2589,3 +2589,190 @@ body.home {
 .op-project-card:hover::before, .op-service-card:hover::before {
   opacity: 1;
 }
+
+/* ==========================================================================
+   WhatsApp Floating Button & Contact Integration
+   ========================================================================== */
+.op-floating-whatsapp {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 998;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  background: #25d366;
+  color: #ffffff !important;
+  font-family: var(--_primitives---font--body, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif);
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  text-decoration: none;
+  transition: transform 0.25s var(--op-ease), box-shadow 0.25s var(--op-ease), background-color 0.25s var(--op-ease);
+}
+
+.op-floating-whatsapp:hover {
+  background: #20ba5a;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+}
+
+.op-floating-whatsapp:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.op-btn--whatsapp {
+  background: #25d366;
+  border-color: #25d366;
+  color: #fff !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.op-btn--whatsapp:hover {
+  background: #20ba5a;
+  border-color: #20ba5a;
+  color: #fff !important;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+@media (max-width: 640px) {
+  .op-floating-whatsapp {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem;
+  }
+  .op-floating-whatsapp__label {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   GitHub Repositories Modal Styles
+   ========================================================================== */
+.op-repo-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.op-repo-modal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  max-height: 55vh;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.op-repo-modal-item {
+  padding: 1.1rem;
+  border: 1px solid var(--op-border-light);
+  border-radius: 4px;
+  background: var(--op-bg);
+  transition: border-color 0.25s var(--op-ease), background-color 0.25s var(--op-ease);
+}
+
+.op-repo-modal-item:hover {
+  border-color: var(--op-accent);
+  background: #fff;
+}
+
+.op-repo-modal-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
+}
+
+.op-repo-modal-top h4 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.op-repo-modal-top a {
+  color: var(--op-ink);
+  text-decoration: none;
+}
+
+.op-repo-modal-top a:hover {
+  color: var(--op-accent);
+}
+
+.op-repo-badge {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.72rem;
+  padding: 0.2rem 0.55rem;
+  background: rgba(62, 107, 98, 0.12);
+  color: var(--op-accent-2);
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.op-repo-desc {
+  margin: 0 0 0.85rem;
+  font-size: 0.88rem;
+  color: var(--op-muted);
+  line-height: 1.5;
+}
+
+.op-repo-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  color: var(--op-muted);
+  border-top: 1px solid var(--op-border-light);
+  padding-top: 0.65rem;
+}
+
+.op-repo-modal-footer {
+  border-top: 1px solid var(--op-border-light);
+  padding-top: 1.25rem;
+}
+
+/* ==========================================================================
+   Art-Directed Background Environment & Subtle Spatial Texture
+   Light architectural line grids and soft ambient paper gradients.
+   ========================================================================== */
+.op-section--white {
+  background:
+    radial-gradient(ellipse 60% 40% at 90% 10%, rgba(217, 119, 6, 0.035), transparent 60%),
+    radial-gradient(ellipse 50% 50% at 10% 90%, rgba(62, 107, 98, 0.03), transparent 60%),
+    #ffffff;
+}
+
+.op-section--tint {
+  background:
+    linear-gradient(180deg, rgba(247, 246, 242, 0.6) 0%, rgba(240, 241, 237, 0.8) 100%),
+    radial-gradient(circle at 20% 20%, rgba(217, 119, 6, 0.025), transparent 40%),
+    var(--op-bg);
+}
+
+.op-section--stone {
+  background:
+    linear-gradient(180deg, var(--op-stone) 0%, #ebece6 100%);
+  position: relative;
+}
+
+/* Subtle architectural perspective grid for technical sections */
+.op-section--stone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(32, 37, 34, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(32, 37, 34, 0.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.op-section--stone .op-section__inner {
+  position: relative;
+  z-index: 1;
+}

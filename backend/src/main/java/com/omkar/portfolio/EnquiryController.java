@@ -15,9 +15,11 @@ import java.util.Map;
 public class EnquiryController {
 
     private final EnquiryEmailService emailService;
+    private final AdminController adminController;
 
-    public EnquiryController(EnquiryEmailService emailService) {
+    public EnquiryController(EnquiryEmailService emailService, AdminController adminController) {
         this.emailService = emailService;
+        this.adminController = adminController;
     }
 
     @PostMapping
@@ -29,6 +31,8 @@ public class EnquiryController {
         }
 
         emailService.send(enquiry);
+        adminController.recordContactSubmission(enquiry);
+
         return ResponseEntity.status(HttpStatus.ACCEPTED).body(
                 Map.of("message", "Your project enquiry was sent.")
         );

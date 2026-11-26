@@ -622,12 +622,172 @@
     });
   }
 
+  
+  function initWhatsApp() {
+    var waConfig = (CONFIG && CONFIG.whatsapp) ? CONFIG.whatsapp : { enabled: true, number: '918208497838', defaultMessage: 'Hello Omkar, I visited your portfolio and would like to discuss a project.', floatingShortcut: true };
+    if (!waConfig.enabled) return;
+
+    var num = waConfig.number || '918208497838';
+    var defaultMsg = waConfig.defaultMessage || 'Hello Omkar, I visited your portfolio and would like to discuss a project.';
+    var encodedMsg = encodeURIComponent(defaultMsg);
+    var waUrl = 'https://wa.me/' + num + '?text=' + encodedMsg;
+
+    // Connect all [data-op-whatsapp] triggers
+    document.querySelectorAll('[data-op-whatsapp]').forEach(function (btn) {
+      btn.setAttribute('href', waUrl);
+      btn.setAttribute('target', '_blank');
+      btn.setAttribute('rel', 'noopener noreferrer');
+      btn.addEventListener('click', function () {
+        trackAnalyticsEvent('whatsapp_click', { placement: btn.getAttribute('data-op-placement') || 'general' });
+      });
+    });
+
+    // Create floating WhatsApp shortcut if enabled and not already present
+    if (waConfig.floatingShortcut && !document.getElementById('op-floating-whatsapp')) {
+      var floatBtn = document.createElement('a');
+      floatBtn.id = 'op-floating-whatsapp';
+      floatBtn.className = 'op-floating-whatsapp';
+      floatBtn.href = waUrl;
+      floatBtn.target = '_blank';
+      floatBtn.rel = 'noopener noreferrer';
+      floatBtn.setAttribute('aria-label', 'Chat directly with Omkar on WhatsApp');
+      floatBtn.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.41a8.173 8.173 0 0 1 2.4 5.83c0 4.54-3.7 8.24-8.24 8.24-1.44 0-2.85-.38-4.09-1.11l-.29-.17-3.04.8 1.01-2.96-.19-.3a8.15 8.15 0 0 1-1.25-4.5c0-4.54 3.69-8.24 8.24-8.24zm4.52 11.64c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.71 4.3 3.8 2.53 1.09 2.53.73 2.99.69.45-.04 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg><span class="op-floating-whatsapp__label">Chat on WhatsApp</span>';
+      floatBtn.addEventListener('click', function () {
+        trackAnalyticsEvent('whatsapp_click', { placement: 'floating_button' });
+      });
+      document.body.appendChild(floatBtn);
+    }
+  }
+
+  // Privacy-First Anonymous Client Analytics Tracker
+  function trackAnalyticsEvent(eventType, meta) {
+    try {
+      var payload = {
+        type: eventType,
+        path: window.location.pathname || '/',
+        referrer: document.referrer ? new URL(document.referrer).hostname : 'direct',
+        meta: meta || {},
+        timestamp: Date.now()
+      };
+      if (window.fetch) {
+        fetch('/api/analytics/track', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).catch(function () {});
+      }
+    } catch (e) {}
+  }
+
+  
+  function renderAllReposModal(repos) {
+    var sorted = (repos || []).slice().sort(function (a, b) {
+      return new Date(b.updated_at || 0) - new Date(a.updated_at || 0);
+    });
+
+    var rows = sorted.map(function (repo) {
+      var dateStr = repo.updated_at ? new Date(repo.updated_at).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' }) : 'Recently updated';
+      return [
+        '<article class="op-repo-modal-item">',
+        '  <div class="op-repo-modal-top">',
+        '    <h4><a href="' + safeUrl(repo.html_url) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(repo.name) + '</a></h4>',
+        '    <span class="op-repo-badge">' + escapeHtml(repo.language || 'Code') + '</span>',
+        '  </div>',
+        '  <p class="op-repo-desc">' + escapeHtml(repo.description || 'Public software repository by Omkar Phapal.') + '</p>',
+        '  <div class="op-repo-meta">',
+        '    <span>Updated: ' + escapeHtml(dateStr) + '</span>',
+        '    <a href="' + safeUrl(repo.html_url) + '" target="_blank" rel="noopener noreferrer" class="op-link-btn op-link-btn--accent op-btn--sm">View Code →</a>',
+        '  </div>',
+        '</article>'
+      ].join('');
+    }).join('');
+
+    var html = [
+      '<div class="op-repo-modal">',
+      '  <div class="op-repo-modal-header">',
+      '    <p class="op-section__subtitle">Public repositories sorted with newest updates first. Connected live to GitHub API.</p>',
+      '  </div>',
+      '  <div class="op-repo-modal-list">',
+      rows.length ? rows : '<p>No public repositories found.</p>',
+      '  </div>',
+      '  <div class="op-repo-modal-footer">',
+      '    <a href="https://github.com/' + encodeURIComponent(CONFIG.githubUser || 'omphapal') + '" target="_blank" rel="noopener noreferrer" class="op-btn op-btn--primary">Visit Full GitHub Profile ↗</a>',
+      '  </div>',
+      '</div>'
+    ].join('');
+
+    openDialog('Public GitHub Repositories — @' + (CONFIG.githubUser || 'omphapal'), html);
+  }
+
+  function openGithubModal() {
+    var CACHE_KEY = 'omkar_github_repos_v3';
+    try {
+      var cached = JSON.parse(localStorage.getItem(CACHE_KEY));
+      if (cached && Array.isArray(cached.data) && cached.data.length) {
+        renderAllReposModal(cached.data);
+        return;
+      }
+    } catch (e) {}
+
+    openDialog('Public GitHub Repositories', '<p class="op-section__subtitle">Loading latest repositories from GitHub...</p>');
+
+    fetch('https://api.github.com/users/' + encodeURIComponent(CONFIG.githubUser || 'omphapal') + '/repos?per_page=30&sort=updated', {
+      headers: { 'Accept': 'application/vnd.github+json' }
+    }).then(function (res) { return res.json(); })
+      .then(function (repos) {
+        var valid = (repos || []).filter(function (r) { return !r.fork && !r.archived; });
+        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ savedAt: Date.now(), data: valid })); } catch (e) {}
+        renderAllReposModal(valid);
+      }).catch(function () {
+        renderAllReposModal([
+          {
+            name: 'dependency-x-ray-pro',
+            language: 'Java',
+            description: 'Maven vulnerability scanner and explainable risk analysis engine.',
+            html_url: 'https://github.com/omphapal',
+            updated_at: new Date().toISOString()
+          },
+          {
+            name: 'signalzero-pro',
+            language: 'Kotlin',
+            description: 'Offline-first Android SOS emergency relay using Bluetooth LE & Wi-Fi Direct mesh.',
+            html_url: 'https://github.com/omphapal',
+            updated_at: new Date(Date.now() - 86400000 * 2).toISOString()
+          },
+          {
+            name: 'hackmate',
+            language: 'Java / React',
+            description: 'Real-time team collaboration platform for hackathon squads (In Progress).',
+            html_url: 'https://github.com/omphapal',
+            updated_at: new Date(Date.now() - 86400000 * 5).toISOString()
+          },
+          {
+            name: 'duplicate-file-name-finder',
+            language: 'Python',
+            description: 'Utility project for finding duplicate file names across directories.',
+            html_url: 'https://github.com/omphapal/duplicate-file-name-finder',
+            updated_at: new Date(Date.now() - 86400000 * 10).toISOString()
+          }
+        ]);
+      });
+  }
+
+  function initGithubModalTriggers() {
+    document.querySelectorAll('[data-op-open-github]').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        openGithubModal();
+      });
+    });
+  }
+
   function init() {
     initVisibilityFailsafe();
     initAvailability();
     initMobileMenu();
     initProjectFilters();
     initGithubRepos();
+    initGithubModalTriggers();
     initCopyButtons();
     initEstimator();
     initDrawerTriggers();
@@ -636,6 +796,8 @@
     initStudio();
     initRevealObserver();
     initCvButtons();
+    initWhatsApp();
+    trackAnalyticsEvent("page_view");
     initMagneticCards();
   }
 

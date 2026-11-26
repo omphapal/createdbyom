@@ -1,0 +1,2544 @@
+<!DOCTYPE html>
+<html data-wf-page="6a8613e0038c16471e17ff7f" data-wf-site="6a8613d3038c16471e17fe66" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DependencyX-Ray Pro | Omkar Phapal</title>
+<meta name="description" content="A full-stack web application that scans uploaded Java projects (ZIP, standalone pom.xml or Git repo) and reports vulnerable direct and transitive dependencies with evidence-backed upgrade advisories."/>
+<meta name="author" content="Omkar Phapal"/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#F7F6F2"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/svg+xml" href="/op-favicon.svg"/>
+<link rel="icon" href="/favicon.ico" sizes="any"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta property="og:site_name" content="Omkar Phapal"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="DependencyX-Ray Pro | Omkar Phapal"/>
+<meta property="og:description" content="A full-stack web application that scans uploaded Java projects (ZIP, standalone pom.xml or Git repo) and reports vulnerable direct and transitive dependencies with evidence-backed upgrade advisories."/>
+<meta property="og:image" content="/assets/og-preview.svg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="DependencyX-Ray Pro | Omkar Phapal"/>
+<meta name="twitter:description" content="A full-stack web application that scans uploaded Java projects (ZIP, standalone pom.xml or Git repo) and reports vulnerable direct and transitive dependencies with evidence-backed upgrade advisories."/>
+<meta name="twitter:image" content="/assets/og-preview.svg"/>
+<link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/>
+<link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.shared.4bb5636f9.min.css" rel="stylesheet" type="text/css" integrity="sha384-S7Vjb5HQzqOLaOcpLlsIPqv3UsN3z4Tv6minJv3OWfsLMewHZ29QHys3LLzYNNmg" crossorigin="anonymous"/>
+<link href="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/css/the-digital-panda---26.6a87a8cb59ab090b5b51f0a9.a62122d71.opt.min.css" rel="stylesheet" type="text/css" integrity="sha384-piEi1x45n4dnPnTB2StFLpZQpvNDoPe9Ima1RblDSG1300om3WKbnsSUikiHcx8m" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.25/dist/lenis.css"/>
+<link rel="stylesheet" href="/enhancements.css"/>
+<style>html.w-mod-js:not(.w-mod-ix3) :is([data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"]:is(:is([data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"]:is(.value-row), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"] :is(.value-row)) :is(.text-serif-l,.text-title-xl)), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"] :is(:is([data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"]:is(.value-row), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"] :is(.value-row)) :is(.text-serif-l,.text-title-xl)), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"]:is([data-wf-target*='["27f8768e-3568-d509-905d-5aa157cd7485","27f8768e-3568-d509-905d-5aa157cd7488"]']), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"] :is([data-wf-target*='["27f8768e-3568-d509-905d-5aa157cd7485","27f8768e-3568-d509-905d-5aa157cd7488"]']), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"]:is(.value-row), [data-wf-component-id="27f8768e-3568-d509-905d-5aa157cd7485"] :is(.value-row), .footer path, [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(:is(*:has(> :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))) > .case-thumb__img:not(:is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))), *:has(> :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video)) ~ :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))) > .case-thumb__img)), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(:is(*:has(> :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))) > .case-thumb__img:not(:is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))), *:has(> :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video)) ~ :is([data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"]:is(.image-card__video), [data-wf-component-id="9d4d2bcc-ef6f-3977-6466-865c2cae6864"] :is(.image-card__video))) > .case-thumb__img)), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is(:is([data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is([data-slider-prev]), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is([data-slider-prev])) .button__bkg), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is(:is([data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is([data-slider-prev]), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is([data-slider-prev])) .button__bkg), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is(:is([data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is([data-slider-next]), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is([data-slider-next])) .button__bkg), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is(:is([data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"]:is([data-slider-next]), [data-wf-component-id="3f46729e-0161-cbc6-0e5d-bf90652dabfb"] :is([data-slider-next])) .button__bkg), [data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"]:is(:is([data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"]:is(.card-service), [data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"] :is(.card-service)) :is(h3, p)), [data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"] :is(:is([data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"]:is(.card-service), [data-wf-component-id="0e27b3e0-cc65-a926-1aa9-a1bc78c9d076"] :is(.card-service)) :is(h3, p))) {visibility: hidden !important;}@media not all and (max-width: 479px) and (min-width: 0px){@media not all and (max-width: 767px) and (min-width: 480px){@media not all and (max-width: 991px) and (min-width: 768px){html.w-mod-js:not(.w-mod-ix3) :is(.action-primary :is(.action-primary__label .button__bkg), .action-primary :is(.action-primary__icon .button__bkg), .action-primary__icon .text-cta) {visibility: hidden !important;}}}}@media not all and (prefers-reduced-motion: reduce){html.w-mod-js:not(.w-mod-ix3) :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is(:is(*:has(> :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))) > .faq-item__body:not(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))), *:has(> :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) ~ :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))) > .faq-item__body)), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is(:is(*:has(> :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))) > .faq-item__body:not(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))), *:has(> :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) ~ :is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']))) > .faq-item__body)), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__glyph), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__glyph), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__plus), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__plus), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__minus), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is(:is([data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"]:is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]']), [data-wf-component-id="49b7fe46-1174-1ace-7811-b9fb7feb2e32"] :is([data-wf-target*='["49b7fe46-1174-1ace-7811-b9fb7feb2e32","49b7fe46-1174-1ace-7811-b9fb7feb2e33"]'])) .faq-item__minus)) {visibility: hidden !important;}}</style>
+<script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "#person",
+      "name": "Omkar Phapal",
+      "jobTitle": "Freelance Java & Spring Boot Developer",
+      "description": "BCA Graduate and freelance developer building websites, Java & Spring Boot backends, REST APIs, and business web applications.",
+      "email": "Omphapal181@gmail.com",
+      "telephone": "+91-8208497838",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Tilak Maharashtra Vidyapeeth"
+      },
+      "knowsAbout": [
+        "Java",
+        "Spring Boot",
+        "REST APIs",
+        "SQL",
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ],
+      "sameAs": [
+        "https://github.com/omphapal",
+        "https://linkedin.com/in/omkarphapal01"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "#website",
+      "name": "Omkar Phapal \u2014 Freelance Developer",
+      "publisher": {
+        "@id": "#person"
+      }
+    }
+  ]
+}
+</script>
+<style>
+  .cablesErrorLog{
+    display:none!important;
+  }
+  .hero-statement__visual{
+    opacity: 0;
+  }
+@view-transition { navigation: auto; }
+
+.vt-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--vt-color, #fff);
+  visibility: hidden;
+  pointer-events: none;
+}
+.vt-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--vt-bg, #0a0a0a);
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+}
+.vt-overlay.is-active {
+  visibility: visible;
+  pointer-events: auto;
+  view-transition-name: vt-overlay;
+}
+.vt-overlay.is-active::before {
+  animation: vt-cover var(--vt-cover, .6s) var(--vt-ease, cubic-bezier(.76, 0, .24, 1)) forwards;
+}
+@keyframes vt-cover {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
+.vt-overlay__label,
+.vt-overlay__image {
+  position: relative;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .4s ease, transform .4s ease;
+  transition-delay: calc(var(--vt-cover, .6s) * .5);
+}
+.vt-overlay.is-active .vt-overlay__label,
+.vt-overlay.is-active .vt-overlay__image {
+  opacity: 1;
+  transform: none;
+}
+.vt-overlay__label {
+  font-family: var(--vt-font, inherit);
+  font-size: var(--vt-font-size, clamp(2rem, 6vw, 5rem));
+  line-height: 1;
+  color: inherit;
+  text-align: center;
+}
+.vt-overlay__image {
+  max-width: var(--vt-image-size, 200px);
+  max-height: var(--vt-image-size, 200px);
+  object-fit: contain;
+}
+.vt-overlay__label[hidden],
+.vt-overlay__image[hidden] { display: none; }
+
+.vt-overlay__hero {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: transparent !important;
+  clip-path: inset(100% 0 0 0);
+}
+.vt-overlay.is-active .vt-overlay__hero {
+  animation: vt-cover-clip var(--vt-cover, .6s) var(--vt-ease, cubic-bezier(.76, 0, .24, 1)) both;
+}
+@keyframes vt-cover-clip {
+  from { clip-path: inset(100% 0 0 0); }
+  to   { clip-path: inset(0); }
+}
+.vt-overlay__hero,
+.vt-overlay__hero *,
+.vt-overlay__label { color: var(--vt-color, #fff) !important; }
+
+html:active-view-transition-type(overlay)::view-transition-old(root) { display: none; }
+html:active-view-transition-type(overlay)::view-transition-new(root) { animation: none; }
+html:active-view-transition-type(overlay)::view-transition-group(vt-overlay) { animation: none; }
+html:active-view-transition-type(overlay)::view-transition-old(vt-overlay) {
+  animation: vt-uncover var(--vt-cover, .6s) var(--vt-ease, cubic-bezier(.76, 0, .24, 1)) both;
+}
+@keyframes vt-uncover {
+  from { clip-path: inset(0); }
+  to   { clip-path: inset(0 0 100% 0); }
+}
+html.is-vt-mask:active-view-transition-type(overlay)::view-transition-old(vt-overlay) {
+  clip-path: none;
+  animation: vt-hold var(--vt-cover, .6s) both;
+  mask-image: var(--vt-mask), linear-gradient(#fff, #fff);
+  mask-mode: luminance;
+  mask-repeat: no-repeat;
+  mask-size: var(--vt-mask-size), 100% 100%;
+  mask-position: 50% 50%, 0 0;
+  mask-composite: exclude;
+}
+@keyframes vt-hold {
+  from { opacity: 1; }
+  to   { opacity: 1; }
+}
+
+html:active-view-transition-type(morph)::view-transition-group(*),
+html:active-view-transition-type(morph)::view-transition-old(root),
+html:active-view-transition-type(morph)::view-transition-new(root) {
+  animation-duration: var(--vt-morph, .55s);
+  animation-timing-function: var(--vt-ease, cubic-bezier(.76, 0, .24, 1));
+}
+::view-transition-group(vt-cover) { overflow: clip; }
+::view-transition-old(vt-cover),
+::view-transition-new(vt-cover) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html.is-vt-leaving [data-vt-card]:not(.is-vt-source) {
+  opacity: .3;
+  transition: opacity .35s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) { animation: none !important; }
+  .vt-overlay { display: none; }
+}
+
+
+/*Case Study Intro anim*/
+    .case-item__thumb:not(.start){
+  clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
+    .case-item__thumb{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      transition:clip-path ease .4s;
+      transition-delay:calc(var(--index) * .15s)
+  }
+</style>
+<script>
+window.VT_CONFIG = {
+  // labelClass: 'text-serif-l',
+  routes: {
+    '/': { label: '', style: '--vt-bg: var(--_primitives---swatch--purple-pale, #f6efff); --vt-color: #05010e' },
+    '/work': { label: 'Projects' },
+    '/about-us': { label: 'About Omkar' },
+    '/project': { label: 'Case Study' }
+  },  
+  mask: [
+    { media: '(max-width: 767px)', sheet: 'https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/6aa980e9ff2ec39a3c953cc0_vt-wipe-mobile-anim.avif', cell: [278, 490] },
+    { sheet: 'https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/6aa980e914b370bdcdbfecfb_vt-wipe-desktop-anim.avif', cell: [640, 360] }
+  ],
+  //    mask: [
+  //   { media: '(max-width: 767px)',
+  //     sheet: 'https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/6aa162fefaa2a375b62a08c6_vt-wipe-mobile.avif',
+  //     cols: 6, rows: 4, cell: [278.3, 489.8] },
+  //   { sheet: 'https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/6aa162fec2ef9d3dbe0ba522_vt-wipe-desktop.avif',
+  //     cols: 6, rows: 5, cell: [640, 360] }
+  // ],
+  pairs: [
+    { match: /^\/project\/[^/]+$/,
+      card: '.case-thumb',
+      image: '.case-thumb__img',
+      hero: '#vt-hero, .case-hero__cover-img-el' }
+  ]
+};
+// Page transitions: overlay wipe + card->cover morph + hero title handoff. Notes: view-transitions.md
+(function () {
+  'use strict';
+
+  var cfg = Object.assign({
+    cover: 600,
+    hold: 350,
+    persist: ['.header'],
+    labelClass: '',
+    routes: {},
+    pairs: [],
+    hero: '.section-hero__title-wrapper',
+    heroText: '.section-hero__title-text',
+    heroLines: '.section-hero__title-line',
+    heroFit: 'fitHeroTitle',
+    pageWrap: '.page',
+    heroOffset: null,
+    warm: ['.header'],
+    mask: [],
+    forms: 'form[data-redirect], form[redirect]',
+    lift: 380,
+    fetchTimeout: 1200
+  }, window.VT_CONFIG || {});
+
+  var KEY = 'vt:next';
+  var NAMED = 'data-vt-named';
+  var html = document.documentElement;
+  var supportsVT = 'onpagereveal' in window &&
+    typeof CSS !== 'undefined' && CSS.supports && CSS.supports('view-transition-name: a');
+  var overlay, label, image;
+  var maskImages = {};
+
+  function reduced() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+  function norm(path) { return path.replace(/\/+$/, '') || '/'; }
+  function visible(el) { return !!el && el.getClientRects().length > 0; }
+
+  function first(root, selectors) {
+    var list = selectors.split(',');
+    for (var i = 0; i < list.length; i++) {
+      var s = list[i].trim();
+      if (!s) continue;
+      var els = root.querySelectorAll(s);
+      for (var j = 0; j < els.length; j++) if (visible(els[j])) return els[j];
+    }
+    return null;
+  }
+
+  function pairFor(path) {
+    for (var i = 0; i < cfg.pairs.length; i++) if (cfg.pairs[i].match.test(path)) return cfg.pairs[i];
+    return null;
+  }
+  function cardOf(link) {
+    var pair = pairFor(norm(link.pathname));
+    return pair ? link.closest(pair.card) : null;
+  }
+  function cardImage(link) {
+    var card = cardOf(link);
+    return card ? first(card, pairFor(norm(link.pathname)).image) : null;
+  }
+  function cardImageFor(path) {
+    var pair = pairFor(path);
+    if (!pair) return null;
+    var links = document.querySelectorAll('a[href]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      if (a.hostname !== location.hostname || norm(a.pathname) !== path) continue;
+      var card = a.closest(pair.card);
+      var img = card && first(card, pair.image);
+      if (img) return img;
+    }
+    return null;
+  }
+  function heroImage() {
+    var pair = pairFor(norm(location.pathname));
+    return pair ? first(document, pair.hero) : null;
+  }
+
+  function name(el, n) {
+    el.style.viewTransitionName = n;
+    el.setAttribute(NAMED, '');
+  }
+  // a duplicate name makes the browser skip the whole transition
+  function clearNames() {
+    var els = document.querySelectorAll('[' + NAMED + ']');
+    for (var i = 0; i < els.length; i++) {
+      els[i].style.viewTransitionName = '';
+      els[i].removeAttribute(NAMED);
+    }
+  }
+  function persist() {
+    for (var i = 0; i < cfg.persist.length; i++) {
+      var el = first(document, cfg.persist[i]);
+      if (el && !el.style.viewTransitionName) el.style.viewTransitionName = 'vt-persist-' + i;
+    }
+  }
+  function markCards() {
+    for (var i = 0; i < cfg.pairs.length; i++) {
+      var cards = document.querySelectorAll(cfg.pairs[i].card);
+      for (var j = 0; j < cards.length; j++) cards[j].setAttribute('data-vt-card', '');
+    }
+  }
+
+  function buildOverlay() {
+    overlay = document.createElement('div');
+    overlay.className = 'vt-overlay';
+    overlay.setAttribute('aria-hidden', 'true');
+    image = document.createElement('img');
+    image.className = 'vt-overlay__image';
+    image.alt = '';
+    image.hidden = true;
+    label = document.createElement('div');
+    label.className = 'vt-overlay__label' + (cfg.labelClass ? ' ' + cfg.labelClass : '');
+    label.hidden = true;
+    overlay.appendChild(image);
+    overlay.appendChild(label);
+    document.body.appendChild(overlay);
+  }
+  function resetOverlay() {
+    html.classList.remove('is-vt-leaving', 'is-vt-covering');
+    [].forEach.call(document.querySelectorAll('.vt-lift'), function (w) { w.remove(); });
+    [].forEach.call(document.querySelectorAll('[data-vt-lifted]'), function (e) {
+      e.style.visibility = '';
+      e.removeAttribute('data-vt-lifted');
+    });
+    var src = document.querySelector('.is-vt-source');
+    if (src) src.classList.remove('is-vt-source');
+    if (!overlay) return;
+    overlay.className = 'vt-overlay';
+    overlay.removeAttribute('style');
+    var hero = overlay.querySelector('.vt-overlay__hero');
+    if (hero) hero.remove();
+    label.textContent = '';
+    label.hidden = true;
+    image.removeAttribute('src');
+    image.hidden = true;
+  }
+
+  function titleCase(slug) {
+    return slug.replace(/[-_]+/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+  }
+  function labelFor(link, path) {
+    var own = link.getAttribute('data-vt-label');
+    if (own !== null) return own;
+    var route = cfg.routes[path];
+    if (route && route.label !== undefined) return route.label;
+    var segs = path.split('/').filter(Boolean);
+    var last = segs.length ? titleCase(segs[segs.length - 1]) : '';
+    if (last.length > 24 && segs.length > 1) {
+      var section = cfg.routes['/' + segs[0]];
+      return section && section.label !== undefined ? section.label : titleCase(segs[0]);
+    }
+    return last;
+  }
+  function fillOverlay(link) {
+    var path = norm(link.pathname);
+    var route = cfg.routes[path] || cfg.routes['/' + path.split('/')[1]] || {};
+    var src = link.getAttribute('data-vt-image') || route.image || '';
+    if (src) image.src = src;
+    label.textContent = src ? '' : labelFor(link, path);
+    var style = link.getAttribute('data-vt-style') || route.style;
+    if (style) {
+      style.split(';').forEach(function (pair) {
+        var i = pair.indexOf(':');
+        if (i > 0) overlay.style.setProperty(pair.slice(0, i).trim(), pair.slice(i + 1).trim());
+      });
+    }
+  }
+  function showLabel() {
+    image.hidden = !image.getAttribute('src');
+    label.hidden = !label.textContent;
+  }
+
+  // the destination's header can be taller or shorter than this page's (Home)
+  function headerHeight(doc) {
+    if (cfg.heroOffset !== null) return cfg.heroOffset;
+    if (!cfg.persist.length) return 0;
+    var theirs = doc.querySelector(cfg.persist[0]);
+    if (theirs) {
+      var probe = document.importNode(theirs, true);
+      probe.style.cssText = 'position:absolute;left:0;top:0;width:100%;visibility:hidden;pointer-events:none';
+      overlay.appendChild(probe);
+      var h = probe.getBoundingClientRect().height;
+      probe.remove();
+      if (h) return h;
+    }
+    var mine = first(document, cfg.persist[0]);
+    return mine ? mine.getBoundingClientRect().height : 0;
+  }
+  function heroClone(doc) {
+    var wrap = doc.querySelector(cfg.hero);
+    var page = wrap && wrap.closest(cfg.pageWrap);
+    if (!wrap || !page) return null;
+    var el = document.createElement('div');
+    el.className = page.className + ' vt-overlay__hero';
+    var spacer = document.createElement('div');
+    spacer.style.height = headerHeight(doc) + 'px';
+    var section = document.createElement(wrap.parentElement.tagName);
+    section.className = wrap.parentElement.className;
+    section.appendChild(document.importNode(wrap, true));
+    el.appendChild(spacer);
+    el.appendChild(section);
+    return el;
+  }
+  // Webflow ships one stylesheet per page; the destination's sheet goes in where page sheets live so later style tags keep winning
+  function loadStyles(doc) {
+    var have = {};
+    [].forEach.call(document.querySelectorAll('link[rel="stylesheet"]'), function (l) { have[l.href] = 1; });
+    var waits = [];
+    [].forEach.call(doc.querySelectorAll('link[rel="stylesheet"]'), function (l) {
+      if (!l.href || have[l.href]) return;
+      have[l.href] = 1;
+      waits.push(new Promise(function (res) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = l.href;
+        link.onload = link.onerror = res;
+        setTimeout(res, 2500);
+        var links = document.querySelectorAll('head link[rel="stylesheet"]');
+        var last = links[links.length - 1];
+        if (last) last.insertAdjacentElement('afterend', link);
+        else document.head.appendChild(link);
+      }));
+    });
+    return Promise.all(waits);
+  }
+  function loadFonts(el) {
+    if (!document.fonts || !document.fonts.load) return Promise.resolve();
+    var seen = {};
+    var waits = [];
+    [].forEach.call(el.querySelectorAll('*'), function (n) {
+      if (!n.firstChild || n.firstChild.nodeType !== 3) return;
+      var cs = getComputedStyle(n);
+      var spec = cs.fontStyle + ' ' + cs.fontWeight + ' 1em ' + cs.fontFamily;
+      if (seen[spec]) return;
+      seen[spec] = 1;
+      waits.push(document.fonts.load(spec).catch(function () {}));
+    });
+    return Promise.all(waits);
+  }
+
+  var heroCache = {};
+  function warm(link) {
+    var path = norm(link.pathname);
+    if (heroCache[path]) return heroCache[path];
+    var fit = window[cfg.heroFit];
+    if (typeof fit !== 'function' || typeof fetch !== 'function' || !supportsVT) return Promise.resolve(null);
+    var ctl = new AbortController();
+    var timer = setTimeout(function () { ctl.abort(); }, cfg.fetchTimeout);
+    heroCache[path] = fetch(link.href, { signal: ctl.signal })
+      .then(function (r) { return r.text(); })
+      .then(function (markup) {
+        clearTimeout(timer);
+        var doc = new DOMParser().parseFromString(markup, 'text/html');
+        if (!doc.querySelector(cfg.hero)) return null;
+        return loadStyles(doc).then(function () {
+          var el = heroClone(doc);
+          if (!el) return null;
+          overlay.appendChild(el);
+          return loadFonts(el).then(function () {
+            var text = el.querySelector(cfg.heroText);
+            var ok = text && fit(text);
+            el.remove();
+            return ok ? el : null;
+          });
+        });
+      })
+      .then(function (el) {
+        if (!el) return null;
+        el.sizes = [].map.call(el.querySelectorAll(cfg.heroLines), function (l) {
+          return [l.style.fontSize, l.style.marginLeft];
+        });
+        return el;
+      })
+      .catch(function () { delete heroCache[path]; return null; });
+    return heroCache[path];
+  }
+
+  function prefetch(url) {
+    var l = document.createElement('link');
+    l.rel = 'prefetch';
+    l.href = url;
+    document.head.appendChild(l);
+  }
+  function saveFlag(flag) {
+    try { sessionStorage.setItem(KEY, JSON.stringify(flag)); } catch (e) {}
+  }
+
+  // a card image cut by an overflow-clipping ancestor (the Home blog row's hover preview)
+  // cannot be morphed in place, so it is re-created in a fixed layer with the same pose
+  // and clip, lifted out upright, and that copy carries the view-transition-name
+  function clipBox(el) {
+    var box = { l: -Infinity, t: -Infinity, r: Infinity, b: Infinity };
+    for (var p = el.parentElement; p && p !== document.body; p = p.parentElement) {
+      var cs = getComputedStyle(p);
+      if (cs.overflowX === 'visible' && cs.overflowY === 'visible') continue;
+      var r = p.getBoundingClientRect();
+      box = { l: Math.max(box.l, r.left), t: Math.max(box.t, r.top), r: Math.min(box.r, r.right), b: Math.min(box.b, r.bottom) };
+    }
+    return box;
+  }
+  function clipped(el) {
+    var r = el.getBoundingClientRect(), c = clipBox(el);
+    return r.left < c.l - 1 || r.top < c.t - 1 || r.right > c.r + 1 || r.bottom > c.b + 1;
+  }
+  function pose(el) {
+    var cs = getComputedStyle(el), r = el.getBoundingClientRect();
+    var m = [1, 0, 0, 1, 0, 0];
+    if (cs.transform && cs.transform !== 'none') {
+      var v = cs.transform.slice(cs.transform.indexOf('(') + 1, -1).split(',').map(parseFloat);
+      m = v.length === 16 ? [v[0], v[1], v[4], v[5], v[12], v[13]] : v;
+    }
+    var w = el.offsetWidth, h = el.offsetHeight;
+    var o = cs.transformOrigin.split(' ').map(parseFloat);
+    var hx = w / 2 - o[0], hy = h / 2 - o[1];
+    var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    // centre of the untransformed box, from the transformed one
+    var rx = cx - (m[0] * hx + m[2] * hy + m[4]) + hx;
+    var ry = cy - (m[1] * hx + m[3] * hy + m[5]) + hy;
+    return {
+      w: w, h: h, rx: rx, ry: ry,
+      transform: 'translate(' + (cx - rx) + 'px,' + (cy - ry) + 'px) matrix(' + [m[0], m[1], m[2], m[3], 0, 0] + ')'
+    };
+  }
+  function insetOf(c) {
+    return 'inset(' + [Math.max(0, c.t), Math.max(0, innerWidth - c.r), Math.max(0, innerHeight - c.b), Math.max(0, c.l)]
+      .map(function (n) { return n + 'px'; }).join(' ') + ')';
+  }
+  function lift(el, atRest) {
+    var p = pose(el), cs = getComputedStyle(el);
+    var wrap = document.createElement('div');
+    wrap.className = 'vt-lift';
+    var img = document.createElement('img');
+    img.alt = '';
+    img.src = el.currentSrc || el.src;
+    img.style.cssText = 'position:absolute;margin:0;max-width:none;transform-origin:50% 50%;' +
+      'left:' + (p.rx - p.w / 2) + 'px;top:' + (p.ry - p.h / 2) + 'px;width:' + p.w + 'px;height:' + p.h + 'px;' +
+      'object-fit:' + cs.objectFit + ';object-position:' + cs.objectPosition + ';border-radius:' + cs.borderRadius + ';box-shadow:' + cs.boxShadow;
+    var L = { wrap: wrap, img: img, el: el, from: p.transform, inset: insetOf(clipBox(el)), rx: p.rx, ry: p.ry };
+    wrap.style.cssText = 'position:fixed;inset:0;z-index:2147482000;pointer-events:none;clip-path:' + (atRest ? 'none' : L.inset);
+    img.style.transform = atRest ? 'none' : L.from;
+    wrap.appendChild(img);
+    document.body.appendChild(wrap);
+    el.style.visibility = 'hidden';
+    el.setAttribute('data-vt-lifted', '');
+    return L;
+  }
+  function ease(ms) {
+    return { duration: ms, easing: 'cubic-bezier(.76, 0, .24, 1)', fill: 'forwards' };
+  }
+  function rise(L) {
+    L.wrap.animate([{ clipPath: L.inset }, { clipPath: 'inset(0px)' }], ease(cfg.lift));
+    return L.img.animate([{ transform: L.from }, { transform: 'none' }], ease(cfg.lift)).finished;
+  }
+  // arrival side: the copy lands upright, then drops back into the clipped slot
+  function settle(L) {
+    var p = pose(L.el);
+    var shift = 'translate(' + (L.rx - p.rx) + 'px,' + (L.ry - p.ry) + 'px)';
+    L.img.style.left = (p.rx - p.w / 2) + 'px';
+    L.img.style.top = (p.ry - p.h / 2) + 'px';
+    var inset = insetOf(clipBox(L.el));
+    L.wrap.animate([{ clipPath: 'inset(0px)' }, { clipPath: inset, offset: .45 }, { clipPath: inset }], ease(cfg.lift));
+    L.img.animate([{ transform: shift }, { transform: p.transform }], ease(cfg.lift)).finished.then(function () {
+      L.el.style.visibility = '';
+      L.el.removeAttribute('data-vt-lifted');
+      L.wrap.remove();
+    });
+  }
+
+  function go(type, link) {
+    var flag = { t: type, at: Date.now() };
+    saveFlag(flag);
+    if (type === 'morph') {
+      clearNames();
+      var el = cardImage(link);
+      cardOf(link).classList.add('is-vt-source');
+      html.classList.add('is-vt-leaving');
+      if (!clipped(el)) {
+        name(el, 'vt-cover');
+        location.href = link.href;
+        return;
+      }
+      var L = lift(el, false);
+      name(L.img, 'vt-cover');
+      var leave = function () { location.href = link.href; };
+      rise(L).then(leave, leave);
+      return;
+    }
+    fillOverlay(link);
+    html.classList.add('is-vt-covering');
+    warm(link).then(function (el) {
+      if (el) {
+        overlay.appendChild(el);
+        flag.title = el.sizes;
+        saveFlag(flag);
+      } else {
+        showLabel();
+      }
+      overlay.classList.add('is-active');
+      setTimeout(function () { location.href = link.href; }, cfg.cover + cfg.hold);
+    });
+  }
+
+  function linkFrom(e) {
+    var link = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!link || !overlay) return null;
+    if (link.hostname !== location.hostname) return null;
+    if (link.target && link.target !== '_self') return null;
+    if (link.hasAttribute('download') || link.hasAttribute('data-vt-ignore')) return null;
+    var href = link.getAttribute('href') || '';
+    if (href.charAt(0) === '#' || /^(mailto|tel|javascript):/i.test(href)) return null;
+    if (norm(link.pathname) === norm(location.pathname) && link.search === location.search) return null;
+    return link;
+  }
+  function onHover(e) {
+    var link = linkFrom(e);
+    if (link && !cardImage(link)) warm(link);
+  }
+  function warmAll() {
+    var seen = {};
+    var links = [];
+    cfg.warm.forEach(function (sel) {
+      [].forEach.call(document.querySelectorAll(sel + ' a[href]'), function (a) {
+        var link = linkFrom({ target: a });
+        var path = link && norm(link.pathname);
+        if (link && !seen[path] && !cardImage(link)) { seen[path] = 1; links.push(link); }
+      });
+    });
+    (function next() {
+      var link = links.shift();
+      if (link) warm(link).then(function () { setTimeout(next, 150); });
+    })();
+  }
+  function onClick(e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var link = linkFrom(e);
+    if (!link || reduced()) return;
+    e.preventDefault();
+    prefetch(link.href);
+    go(supportsVT && cardImage(link) ? 'morph' : 'overlay', link);
+  }
+
+  // Webflow reads data-redirect once at its ready hook (after this init) and on success
+  // redirects instead of showing .w-form-done; without it the done block shows, which
+  // is the cue to run the overlay to the redirect target ourselves
+  function watchForms() {
+    if (!cfg.forms) return;
+    [].forEach.call(document.querySelectorAll(cfg.forms), function (form) {
+      var to = form.getAttribute('data-redirect') || form.getAttribute('redirect');
+      var link = document.createElement('a');
+      link.href = to || '';
+      var wrap = form.closest('.w-form') || form.parentElement;
+      var done = wrap && wrap.querySelector('.w-form-done');
+      if (!to || !done || link.hostname !== location.hostname) return;
+      form.removeAttribute('data-redirect');
+      form.removeAttribute('redirect');
+      form.addEventListener('focusin', function () { warm(link); }, { once: true });
+      var obs = new MutationObserver(function () {
+        if (!visible(done)) return;
+        obs.disconnect();
+        if (reduced() || !supportsVT) { location.href = link.href; return; }
+        go('overlay', link);
+      });
+      obs.observe(done, { attributes: true, attributeFilter: ['style', 'class'] });
+    });
+  }
+
+  function pickMask() {
+    for (var i = 0; i < cfg.mask.length; i++) {
+      var m = cfg.mask[i];
+      if (m.cols || m.rows) {
+        console.warn('[vt] mask entries are animated AVIFs since 1.3.0; sprite sheet ignored:', m.sheet);
+        continue;
+      }
+      if (!m.media || window.matchMedia(m.media).matches) return m;
+    }
+    return null;
+  }
+  function maskImage(m) {
+    if (!maskImages[m.sheet]) {
+      maskImages[m.sheet] = new Image();
+      maskImages[m.sheet].src = m.sheet;
+    }
+    return maskImages[m.sheet];
+  }
+  // a pending mask image paints the panel as fully transparent, so the sheet is
+  // kept as a data URL for the session and read synchronously before first paint
+  function maskKey(m) { return 'vt:mask:' + m.sheet; }
+  function storeMask(m) {
+    try { if (sessionStorage.getItem(maskKey(m))) return; } catch (e) { return; }
+    fetch(m.sheet).then(function (r) { return r.blob(); }).then(function (blob) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        try { sessionStorage.setItem(maskKey(m), reader.result); } catch (e) {}
+      };
+      reader.readAsDataURL(blob);
+    }).catch(function () {});
+  }
+  function maskSource(m) {
+    var data = null;
+    try { data = sessionStorage.getItem(maskKey(m)); } catch (e) {}
+    if (data) return data;
+    var img = maskImage(m);
+    return img.complete && img.naturalWidth ? m.sheet : null;
+  }
+  // the sheet is an animated AVIF; the browser advances its frames from the compositor,
+  // so the wipe keeps playing while the arriving page's scripts block the main thread.
+  // a fresh fragment per navigation gives it a fresh timeline instead of a finished one
+  function armMask() {
+    var m = pickMask();
+    var src = m && maskSource(m);
+    if (!src) return false;
+    var aspect = m.cell[0] / m.cell[1];
+    var w = Math.max(innerWidth, innerHeight * aspect);
+    var h = w / aspect;
+    html.style.setProperty('--vt-mask', 'url("' + src + '#' + Date.now() + '")');
+    html.style.setProperty('--vt-mask-size', w + 'px ' + h + 'px');
+    html.classList.add('is-vt-mask');
+    return true;
+  }
+
+  function readFlag() {
+    var raw = null;
+    try {
+      raw = sessionStorage.getItem(KEY);
+      sessionStorage.removeItem(KEY);
+    } catch (e) {}
+    if (!raw) return null;
+    try {
+      var flag = JSON.parse(raw);
+      return Date.now() - flag.at < 15000 ? flag : null;
+    } catch (e) { return null; }
+  }
+
+  function adoptTitle(sizes) {
+    var wrap = first(document, cfg.hero);
+    var lines = wrap ? wrap.querySelectorAll(cfg.heroLines) : [];
+    if (!lines.length || lines.length !== sizes.length) return;
+    for (var i = 0; i < lines.length; i++) {
+      lines[i].style.fontSize = sizes[i][0];
+      lines[i].style.marginLeft = sizes[i][1];
+      lines[i].style.textAlign = 'left';
+    }
+    var text = wrap.querySelector(cfg.heroText);
+    if (text) text.classList.add('is-fitted');
+  }
+
+  // fetched from <head>, before first paint: pagereveal needs it decoded, and it usually fires before DOMContentLoaded
+  var earlyMask = pickMask();
+  if (earlyMask) { maskImage(earlyMask); storeMask(earlyMask); }
+
+  window.addEventListener('pageswap', function (e) {
+    if (!e.viewTransition || !e.activation) return;
+    if (e.activation.navigationType !== 'traverse') return;
+    var dest = new URL(e.activation.entry.url);
+    if (dest.origin !== location.origin) { e.viewTransition.skipTransition(); return; }
+    clearNames();
+    var el = heroImage() || cardImageFor(norm(dest.pathname));
+    if (el) name(el, 'vt-cover');
+    else e.viewTransition.skipTransition();
+  });
+
+  window.addEventListener('pagereveal', function (e) {
+    var vt = e.viewTransition;
+    // bfcache hands the page back exactly as it left: still covered
+    resetOverlay();
+    clearNames();
+    if (!vt) return;
+    var act = window.navigation && navigation.activation;
+    var type = act ? act.navigationType : 'push';
+    var from = act && act.from && act.from.url ? new URL(act.from.url) : null;
+    var flag = readFlag();
+    if (reduced() || type === 'reload' || !from || from.origin !== location.origin) {
+      vt.skipTransition();
+      return;
+    }
+    persist();
+    var kind = type === 'traverse' ? 'morph' : flag && flag.t;
+    var landing = null;
+    if (kind === 'morph') {
+      var el = heroImage() || cardImageFor(norm(from.pathname));
+      if (!el) { vt.skipTransition(); return; }
+      if (clipped(el)) {
+        landing = lift(el, true);
+        name(landing.img, 'vt-cover');
+      } else {
+        name(el, 'vt-cover');
+      }
+    } else if (kind === 'overlay') {
+      if (flag.title) adoptTitle(flag.title);
+      armMask();
+    } else {
+      vt.skipTransition();
+      return;
+    }
+    if (vt.types) vt.types.add(kind);
+    html.classList.add('is-vt-' + kind);
+    window.vtFinished = vt.finished;
+    vt.finished.then(function () {
+      clearNames();
+      html.classList.remove('is-vt-' + kind, 'is-vt-mask');
+      if (landing) settle(landing);
+      document.dispatchEvent(new CustomEvent('vt:finished'));
+    }, function () {
+      clearNames();
+      if (landing) settle(landing);
+    });
+  });
+
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) { resetOverlay(); clearNames(); }
+  });
+
+  function init() {
+    buildOverlay();
+    persist();
+    markCards();
+    watchForms();
+    document.addEventListener('click', onClick);
+    document.addEventListener('pointerover', onHover, true);
+    document.addEventListener('touchstart', onHover, { capture: true, passive: true });
+    document.addEventListener('focusin', onHover, true);
+    window.addEventListener('resize', function () { heroCache = {}; });
+    if (cfg.warm.length && supportsVT) {
+      window.addEventListener('load', function () {
+        (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(warmAll);
+      });
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+
+
+
+
+</script>
+
+<meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#F7F6F2" media="(prefers-color-scheme: dark)">
+<meta name="msapplication-navbutton-color" content="#F7F6F2">
+<meta name="apple-mobile-web-app-status-bar-style" content="#F7F6F2"><style>
+/* Lite mode */
+html.is-lite-3d #glcanvas { background: center / cover no-repeat url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-16x9.webp); }
+@media (min-width: 992px) and (max-aspect-ratio: 1/1) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-portrait.webp); } }
+@media (min-width: 992px) and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 7/5) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-4x3.webp); } }
+@media (min-width: 992px) and (min-aspect-ratio: 7/5) and (max-aspect-ratio: 17/10) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-16x10.webp); } }
+@media (min-width: 992px) and (min-aspect-ratio: 41/20) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-desktop-21x9.webp); } }
+@media (max-width: 991px) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-tablet.webp); } }
+@media (max-width: 991px) and (max-aspect-ratio: 3/5) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-phone.webp); } }
+@media (max-width: 991px) and (min-aspect-ratio: 7/5) { html.is-lite-3d #glcanvas { background-image: url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/hero-phone-landscape.webp); } }
+html.is-lite-3d #panda-head { background: center / 100% 100% no-repeat url(https://d2my2wpsc41l6t.cloudfront.net/tdp26/images/render-guard-v1/head.webp); }
+html.is-lite-3d .wordmark-lockup__head { transform: translate(0); }
+html.is-lite-3d .hero-statement__statement { position: relative; }
+@keyframes rg-canvas-out { to { opacity: 0; } }
+@supports (animation-timeline: view()) {
+  html.is-lite-3d { timeline-scope: --rg-statement; }
+  html.is-lite-3d .statement--wrapper { view-timeline: --rg-statement block; }
+  html.is-lite-3d #glcanvas { animation: rg-canvas-out linear both; animation-timeline: --rg-statement; animation-range: cover 26% cover 31%; }
+}
+@supports not (animation-timeline: view()) { html.is-lite-3d .anim--wrapper { position: absolute; } }
+
+</style>
+
+
+
+
+<script>window.voxelProxyState = { phase: "off", finished: true };</script>
+</head>
+<body>
+<div class="page">
+<header data-wf--header--variant="base" data-wf-component-id="2782c40d-6c21-47d1-3735-41477a5ae840" data-wf-variant-state="base" class="header"><div class="css w-embed"><style>
+  :root {
+    --size-unit: 16;
+    --size-container-ideal: 1920;
+    --size-container-min: 992px;
+    --size-container-max: 1920px;
+    --size-container: clamp(var(--size-container-min), 100vw, var(--size-container-max));
+    --size-font: calc(var(--size-container) / (var(--size-container-ideal) / var(--size-unit)));
+  }
+  @media screen and (max-width: 991px) {
+    :root {
+      --size-container-ideal: 768;
+      --size-container-min: 768px;
+      --size-container-max: 991px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    :root {
+      --size-container-ideal: 550;
+      --size-container-min: 480px;
+      --size-container-max: 767px;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    :root {
+      --size-container-ideal: 360;
+      --size-container-min: 320px;
+      --size-container-max: 479px;
+    }
+  }
+  html {
+    font-size: var(--size-font);
+  }
+  body {
+    margin: 0;
+    font-size: var(--size-font);
+  }
+  .page {
+    transform: none !important;
+  }
+  /*MOUSE*/
+  .mouse .mouse__trail:nth-child(1) {
+    background: color-mix(in srgb, var(--_colors---bg--off-purple), var(--_colors---fill--green));
+  }
+  .mouse .mouse__trail:nth-child(2) {
+    background: color-mix(in srgb, var(--_colors---bg--off-purple) 20%, var(--_colors---fill--green) 80%);
+  }
+  .mouse .mouse__trail:nth-child(3) {
+    background: color-mix(in srgb, var(--_colors---bg--off-purple) 50%, var(--_colors---fill--green) 50%);
+  }
+  .mouse .mouse__trail:nth-child(4) {
+    background: color-mix(in srgb, var(--_colors---bg--off-purple) 80%, var(--_colors---fill--green) 20%);
+  }
+  /* ===== chrome: nav-menu (navbar + masthead open state); desc conceals by opacity, not clip, so trimmed glyph overhang survives ===== */
+  .nav-menu__item:hover .nav-menu__item-desc,
+  .nav-menu__item:focus-visible .nav-menu__item-desc {
+    grid-template-rows: 1fr;
+    padding-top: var(--_system---space--v-s);
+  }
+  .nav-menu__item:hover .nav-menu__item-desc-inner,
+  .nav-menu__item:focus-visible .nav-menu__item-desc-inner {
+    opacity: 1;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .nav-menu__item-desc {
+      transition: none;
+    }
+    .nav-menu__item-desc-inner {
+      transition: none;
+    }
+  }
+
+  /* ===== atom: action-primary ===== */
+  /* .action-primary:hover .action-primary__label,
+  .action-primary:hover .action-primary__icon {
+    background-color: var(--_colors---fill--green);
+  } */
+
+  /* ===== section: awards (custom tabs: JS combines Designer-visible panes; current = .is-current) ===== */
+  .awards__tabs.js-tabs .awards__pane:not(.is-current) {
+    display: none;
+  }
+
+  /* ===== section: blog ===== */
+  .article-row:hover .article-thumb__title,
+  .article-row:hover .article-row__title {
+    /* color: var(--_colors---text--purple); */
+  }
+  @media (min-width: 1024px) {
+    .article-row:hover .article-row__preview {
+      transform: translate3d(0, 0, 0) rotate(-10deg);
+    }
+    .article-body figure > div{
+      display: block!important;
+    }
+  }
+
+  /* ===== section: team ===== */
+  .team__carousel:not(.swiper-initialized) .swiper-wrapper {
+    justify-content: center;
+  }
+  .swiper-initialized .team__slide .disc-team {
+    transform: rotate(var(--disc-rot, 0deg));
+    transition: transform 0.6s ease;
+  }
+  .team .swiper-slide-active .disc-team__photo {
+    opacity: 1;
+  }
+  .team .team__passion-item p {
+    transition: color 0.35s ease;
+  }
+  .team .team__passion-list * {
+    display: inline !important;
+  }
+  .team .team__passion-flow .w-dyn-list,
+  .team .team__passion-flow .team__passion-list,
+  .team .team__passion-flow > p {
+    display: inline;
+  }
+
+  /* ===== section: process (also process-3) ===== */
+  .process .action-primary:hover .action-primary__label,
+  .process .action-primary:hover .action-primary__icon {
+    color: var(--_colors---text--light);
+  }
+
+  /* ===== section: process-diamonds ===== */
+  .process-diamonds .action-primary:hover .action-primary__label,
+  .process-diamonds .action-primary:hover .action-primary__icon {
+    color: var(--_colors---text--light);
+  }
+
+  /* ===== section: featured-cases-stacked (also -b, -c) ===== */
+
+  @media (max-width: 991px) {
+    .featured-cases.is-spread .case-thumb {
+      width: 100%;
+    }
+    .case-item__thumb:nth-child(3) {
+      display: none;
+    }
+    .featured-cases.is-spread .case-thumb__info {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      row-gap: var(--_system---space--v-r);
+    }
+    .featured-cases.is-spread .case-thumb__meta {
+      width: 22.5rem;
+      max-width: 100%;
+    }
+    .featured-cases.is-spread .case-thumb__img.is-2,
+    .featured-cases.is-spread .case-item__thumb:nth-child(2) {
+      display: none;
+    }
+  }
+  @media (max-width: 479px) {
+    .featured-cases.is-spread .case-thumb__meta {
+      width: auto;
+    }
+    .case-item__thumb:nth-child(2) {
+      display: none;
+    }
+  }
+
+  /* ===== section: section-form ===== */
+  .section-form .field__input:user-invalid {
+    box-shadow: inset 0 0 0 1px var(--_colors---border--purple, #7a27f8);
+    color: var(--_colors---text--purple, #7a27f8);
+  }
+  .section-form .field__input:user-invalid ~ .field__label {
+    color: var(--_colors---text--purple, #7a27f8);
+  }
+  .section-form .field__input:not(:placeholder-shown) ~ .field__label {
+    opacity: 0;
+  }
+  .section-form .field__input:user-invalid ~ .field__error {
+    display: block;
+  }
+  .section-form .field.is-area .field__label {
+    top: var(--_system---space--v-s, 1.5rem);
+    transform: none;
+  }
+  .section-form .field.is-area .field__input {
+    height: 20rem;
+    resize: none;
+  }
+  .section-form .form-submit:hover .form-submit__box,
+  .section-form .form-submit:hover .form-submit__icon,
+  .section-form .form-submit:focus-within .form-submit__box,
+  .section-form .form-submit:focus-within .form-submit__icon {
+    background-color: var(--_colors---fill--cta-hover, #641ed2);
+  }
+
+  /* ===== section: featured-case-pager (also -b) ===== */
+  .featured-case .case-thumb .text-body-r {
+    line-height: 140%;
+    margin-block: -0.35em;
+  }
+
+  /* ===== section: process-tabs (also -b, -c) ===== */
+  .process-tabs .text-title-s.tab {
+    color: var(--_colors---text--dark-gray);
+    border-bottom-color: var(--_colors---border--medium-2);
+    padding-bottom: calc(var(--_system---space--v-s) - 4px);
+  }
+  .process-tabs .action-secondary {
+    display: none;
+  }
+  .process-tabs .action-primary:hover .action-primary__label,
+  .process-tabs .action-primary:hover .action-primary__icon {
+    color: var(--_colors---text--light);
+  }
+  @media (min-width: 992px) {
+    .process-tabs__tab-bar > .tab {
+      flex: 1 1 0;
+      min-width: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    .process-tabs__tab-bar > .tab {
+      flex: 0 0 auto;
+      white-space: nowrap;
+      padding-right: var(--_system---space--h-r);
+    }
+  }
+  /* process-tabs-slot: every dropped step shows until tabsinit arms the root; a hidden step stays rendered (never display:none) so the step counter below still counts it */
+  .process-tabs.js-tabs [data-tabs-panels] {
+    position: relative;
+  }
+  .process-tabs.js-tabs [data-tabs-panels] > :not(.is-current) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  /* process-tabs-slot step numbers are counted by CSS, not typed per step (2026-09-16 feedback); reorder or add a step and it renumbers itself */
+  .process-tabs [data-tabs-panels] {
+    counter-reset: step;
+  }
+  .process-tabs .tab-step {
+    counter-increment: step;
+  }
+  .process-tabs .tab-step .list-item__num::before {
+    content: counter(step, decimal-leading-zero);
+  }
+
+  /* ===== section: faq (faq-slot / faq-item): native details; the glyph swaps on [open]; hover per 999:14269 ===== */
+  .faq-item__summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-item__glyph {
+    display: block;
+    width: 1.12rem;
+    height: 1.0575rem;
+  }
+  html:not(.w-mod-ix3) .faq-item:not([open]) .faq-item__minus,
+  html:not(.w-mod-ix3) .faq-item[open] .faq-item__plus {
+    visibility: hidden;
+  }
+  .faq-item__summary:focus-visible {
+    outline: 2px solid var(--_colors---border--purple, #7a27f8);
+    outline-offset: 2px;
+  }
+  @media (hover: hover) {
+    .faq-item:has(> .faq-item__summary:hover) {
+      border-bottom-color: var(--_colors---border--purple, #7a27f8);
+    }
+    .faq-item__summary:hover .faq-item__question {
+      color: var(--_colors---text--purple, #7a27f8);
+    }
+    .faq-item__summary:hover .faq-item__icon {
+      border-color: var(--_colors---border--purple, #7a27f8);
+      color: var(--_colors---text--purple, #7a27f8);
+    }
+  }
+  @supports (interpolate-size: allow-keywords) and selector(::details-content) {
+    .faq-item {
+      interpolate-size: allow-keywords;
+    }
+    .faq-item::details-content {
+      height: 0;
+      overflow: clip;
+      transition: height 0.45s cubic-bezier(0.22, 1, 0.36, 1), content-visibility 0.45s allow-discrete;
+    }
+    .faq-item[open]::details-content {
+      height: auto;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .faq-item::details-content {
+      transition: none;
+    }
+    .faq-item:not([open]) .faq-item__minus,
+    .faq-item[open] .faq-item__plus {
+      visibility: hidden;
+    }
+  }
+
+  /* ===== section: values-list ===== */
+  .values-list.is-armed .value-row__icon {
+    min-width: 0;
+    overflow: hidden;
+    filter: opacity(100%);
+    transition:
+      width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.25s ease 0.1s;
+  }
+  .values-list.is-armed .value-row:not(.is-revealed) .value-row__icon {
+    width: 0;
+    filter: opacity(0%);
+    transition:
+      width 0.35s cubic-bezier(0.22, 1, 0.36, 1) 0.05s,
+      filter 0.2s ease;
+  }
+  .values-list.is-armed .value-row__desc-text {
+    transition:
+      opacity 0.6s ease 0.15s,
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1) 0.15s;
+  }
+  .values-list.is-armed .value-row:not(.is-revealed) .value-row__desc-text {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+
+  /* ===== chrome: header (unified Header) ===== */
+  .header__menu:hover .menu-icon {
+    background-color: var(--_colors---fill--dark);
+  }
+  .header__menu:hover .menu-icon__dot {
+    background-color: var(--_colors---fill--white);
+  }
+
+  /* ===== chrome: header Static variant state toggles (HeaderStaticInit) ===== */
+  .header:not([data-wf--header--variant='home']) .nav-menu.is-open {
+    visibility: visible;
+  }
+  .header:not([data-wf--header--variant='home']) .nav-menu__dropdown.is-open {
+    height: auto;
+  }
+  .header:not([data-wf--header--variant='home']).is-scrolled .navbar__lockup-box {
+    display: inline-block;
+  }
+  @media (max-width: 991px) {
+    .header:not([data-wf--header--variant='home']).is-scrolled .header__lockup-zone {
+      display: none;
+    }
+  }
+  .header:not([data-wf--header--variant='home']):has(.nav-menu.is-open) .navbar__lockup-box {
+    opacity: 0;
+  }
+  /* ===== repair: wordmark SVGs lost __digital/__panda classes in a client rebuild; structural equivalents, <=991 only ===== */
+  @media (max-width: 991px) {
+    .wordmark-lockup > svg:first-of-type {
+      width: 85.95%;
+      margin: 1.5648% 0;
+    }
+    .wordmark-lockup > svg:last-of-type {
+      width: auto;
+      flex: 1 1 0%;
+      min-width: 0;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 480px) {
+    .navbar__lockup-box .wordmark-lockup > svg:first-of-type {
+      width: 45.815%;
+      margin: 0;
+    }
+  }
+  /* ===== section: tab-list (Work case rows: hover per 226:11436; nth-child z ladder so a hovered preview tucks behind the rows below) ===== */
+  @media (min-width: 992px) {
+    .case-row:hover .case-row__preview {
+      opacity: 1;
+      transform: translateY(0) rotate(-9.05deg);
+    }
+    .tab-list__group-rows > .case-row:nth-child(1) {
+      z-index: 1;
+    }
+    .tab-list__group-rows > .case-row:nth-child(2) {
+      z-index: 2;
+    }
+    .tab-list__group-rows > .case-row:nth-child(3) {
+      z-index: 3;
+    }
+    .tab-list__group-rows > .case-row:nth-child(4) {
+      z-index: 4;
+    }
+    .tab-list__group-rows > .case-row:nth-child(5) {
+      z-index: 5;
+    }
+    .tab-list__group-rows > .case-row:nth-child(6) {
+      z-index: 6;
+    }
+    .tab-list__group-rows > .case-row:nth-child(7) {
+      z-index: 7;
+    }
+    .tab-list__group-rows > .case-row:nth-child(8) {
+      z-index: 8;
+    }
+    .tab-list__group-rows > .case-row:nth-child(9) {
+      z-index: 9;
+    }
+    .tab-list__group-rows > .case-row:nth-child(10) {
+      z-index: 10;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(1) {
+      z-index: 1;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(2) {
+      z-index: 2;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(3) {
+      z-index: 3;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(4) {
+      z-index: 4;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(5) {
+      z-index: 5;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(6) {
+      z-index: 6;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(7) {
+      z-index: 7;
+    }
+    .tab-list__pane > .tab-list__group:nth-child(8) {
+      z-index: 8;
+    }
+  }
+
+  /* ===== chrome: header full menu (panes, media column, tablet links, mobile accordion); states toggled by HeaderStaticInit / NavMenuInit ===== */
+  .nav-menu__close .menu-icon__dot {
+    background-color: var(--_colors---fill--white);
+  }
+  .nav-menu__close:hover .text-navlink {
+    text-decoration: underline;
+  }
+  .header .nav-menu__acc-row.is-open .nav-menu__acc-sub {
+    display: flex;
+  }
+
+  /* ===== media video loops (VideoLoopInit owns playback, one playing site-wide) ===== */
+  .case-thumb__vid {
+    display: none;
+    object-fit: cover;
+  }
+  .case-thumb__vid.is-playing {
+    display: block;
+  }
+
+  /* ===== section: why-us (About): disc portraits hover-revealed ===== */
+  .why-us .disc-team:hover .disc-team__photo {
+    opacity: 1;
+  }
+
+  /* ===== chrome: header ink (HeaderInkInit toggles .is-on-dark; dark ground -> light ink) ===== */
+  .header.is-on-dark .header__bar {
+    color: var(--_colors---text--light);
+  }
+  .header.is-on-dark .header__bar .text-navlink {
+    color: var(--_colors---text--light);
+  }
+  .header.is-on-dark .header__bar .menu-icon__dot {
+    background-color: var(--_colors---fill--white);
+  }
+
+  /* ===== chrome: nav-form (contact overlay; NavFormInit toggles .is-open): chip states, float labels, scroll lock ===== */
+  .chip__input:checked + .chip__label {
+    background-color: var(--_colors---fill--cta-default);
+    border-color: transparent;
+    color: var(--_colors---text--light);
+  }
+  .chip__input:focus-visible + .chip__label {
+    outline: 2px solid var(--_colors---border--purple, #7a27f8);
+    outline-offset: 2px;
+  }
+  .nav-form .field__input:user-invalid {
+    box-shadow: inset 0 0 0 1px var(--_colors---border--purple, #7a27f8);
+    color: var(--_colors---text--purple, #7a27f8);
+  }
+  .nav-form .field__input:user-invalid ~ .field__label {
+    color: var(--_colors---text--purple, #7a27f8);
+  }
+  .nav-form .field__input:not(:placeholder-shown) ~ .field__label {
+    opacity: 0;
+  }
+  .nav-form .field__input:user-invalid ~ .field__error {
+    display: block;
+  }
+  .nav-form .field.is-area .field__label {
+    top: var(--_system---space--v-s, 1.5rem);
+    transform: none;
+  }
+  .nav-form .field.is-area .field__input {
+    height: 100%;
+    resize: none;
+  }
+  .nav-form .form-submit:hover .form-submit__box,
+  .nav-form .form-submit:hover .form-submit__icon,
+  .nav-form .form-submit:focus-within .form-submit__box,
+  .nav-form .form-submit:focus-within .form-submit__icon {
+    background-color: var(--_colors---fill--cta-hover, #641ed2);
+  }
+  body.nav-form-open {
+    overflow: hidden;
+  }
+  .nav-form:not(.is-open) .nav-form__panel {
+    transform: translate3d(50%, 0, 0);
+  }
+
+  /* ===== chrome: nav link hover (98:9392: purple + underline on every top-nav link; the is-on-dark repeat outranks header ink at 0,4,0) ===== */
+  .navbar-alt__links .text-navlink,
+  .nav-menu__tab-links .text-navlink {
+    transition: color 0.2s ease;
+  }
+  .navbar-alt__links .text-navlink:hover,
+  .navbar-alt__links .text-navlink:focus-visible,
+  .nav-menu__tab-links .text-navlink:hover,
+  .nav-menu__tab-links .text-navlink:focus-visible,
+  .header.is-on-dark .header__bar .navbar-alt__links .text-navlink:hover,
+  .header.is-on-dark .header__bar .navbar-alt__links .text-navlink:focus-visible {
+    color: var(--_colors---text--purple, #7a27f8);
+    text-decoration: underline;
+  }
+
+  /* ===== chrome: header open state (the panel is the only dark ground; hangs off --nav-open-top / --nav-hdr-h; clip owned by NavMenuInit; [data-header-block] paints above the header but never takes the pointer; light ink >=992 only; Home keeps its one-line lockup at 480-991 and stacks only <=479; rationale in sections/_page/nav-menu.md revisions 8-13) ===== */
+  @media (max-width: 991px) {
+    .header .nav-menu {
+      top: 0;
+      padding-top: var(--nav-hdr-h, 0px);
+    }
+  }
+  .header.is-menu-open .header__bar,
+  .header.is-menu-open .header__lockup-zone {
+    color: var(--_colors---text--light);
+  }
+  .header.is-menu-open .header__bar .text-navlink {
+    color: var(--_colors---text--light);
+  }
+  .header.is-menu-open .header__bar .menu-icon__dot {
+    background-color: var(--_colors---fill--white);
+  }
+  .header .header__bar .navbar-alt__links .text-navlink.is-open,
+  .header.is-menu-open .header__bar .navbar-alt__links .text-navlink:hover,
+  .header.is-menu-open .header__bar .navbar-alt__links .text-navlink:focus-visible {
+    color: var(--_colors---text--purple, #7a27f8);
+    text-decoration: underline;
+  }
+  @media (max-width: 991px) {
+    .header.is-menu-open .header__menu {
+      display: none;
+    }
+    .header.is-menu-open .header__bar .nav-menu__close {
+      display: flex;
+    }
+  }
+
+  .header.is-menu-open ~ [data-header-block],
+  .header.is-menu-open ~ * [data-header-block] {
+    position: relative;
+    z-index: 10001;
+    pointer-events: none;
+  }
+  @media (min-width: 992px) {
+    .header.is-menu-open ~ [data-header-block],
+    .header.is-menu-open ~ [data-header-block] *,
+    .header.is-menu-open ~ * [data-header-block],
+    .header.is-menu-open ~ * [data-header-block] * {
+      color: var(--_colors---text--light);
+    }
+  }
+  @media (max-width: 991px) {
+    .header.is-menu-open ~ [data-header-block],
+    .header.is-menu-open ~ * [data-header-block] {
+      z-index: auto;
+      pointer-events: auto;
+    }
+  }
+  @media (max-width: 767px) {
+    .header.is-menu-open .header__lockup-zone {
+      display: none;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 480px) {
+    .header .header__lockup-zone .wordmark-lockup {
+      flex-wrap: nowrap;
+      justify-content: center;
+      column-gap: 0.87%;
+    }
+    .header .header__lockup-zone .wordmark-lockup > svg:first-of-type {
+      width: 45.815%;
+      margin: 0;
+    }
+    .header .header__lockup-zone .wordmark-lockup__head {
+      width: 9.147%;
+    }
+  }
+  @media (max-width: 991px) and (min-width: 768px) {
+    .header[data-wf--header--variant='home']:not(.is-menu-open) {
+      top: -4.53rem;
+    }
+  }
+  @media (max-width: 767px) and (min-width: 480px) {
+    .header[data-wf--header--variant='home']:not(.is-menu-open) {
+      top: -3.35rem;
+    }
+    .header .nav-menu__foot-logo .wordmark-lockup {
+      flex-wrap: nowrap;
+      justify-content: center;
+      column-gap: 0.87%;
+    }
+    .header .nav-menu__foot-logo .wordmark-lockup > svg:first-of-type {
+      width: 45.815%;
+      margin: 0;
+    }
+    .header .nav-menu__foot-logo .wordmark-lockup__head {
+      width: 9.147%;
+    }
+  }
+
+  /* ===== chrome: mobile sheet under a moving browser bar (Ilya 2026-09-05: "menu resizing while scrolling"): <=767 the document stops scrolling while the sheet is open, and a dark bleed below the sheet's 100dvh edge covers the band a collapsing URL bar exposes before dvh catches up; rationale in sections/_page/nav-menu.md revision 20 ===== */
+  @media (max-width: 767px) {
+    body:has(.header.is-menu-open) {
+      overflow: hidden;
+    }
+    .header.is-menu-open::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100dvh;
+      height: 100lvh;
+      background-color: var(--_colors---fill--dark);
+      pointer-events: none;
+    }
+  }
+
+  /* ===== chrome: nav dropdown per-item media (positional pairing; rest shows none; desktop-only) ===== */
+  .header .nav-menu__media > * {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(1):hover) ~ .nav-menu__media > *:nth-child(1),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(1):focus-visible) ~ .nav-menu__media > *:nth-child(1),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(2):hover) ~ .nav-menu__media > *:nth-child(2),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(2):focus-visible) ~ .nav-menu__media > *:nth-child(2),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(3):hover) ~ .nav-menu__media > *:nth-child(3),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(3):focus-visible) ~ .nav-menu__media > *:nth-child(3),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(4):hover) ~ .nav-menu__media > *:nth-child(4),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(4):focus-visible) ~ .nav-menu__media > *:nth-child(4),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(5):hover) ~ .nav-menu__media > *:nth-child(5),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(5):focus-visible) ~ .nav-menu__media > *:nth-child(5),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(6):hover) ~ .nav-menu__media > *:nth-child(6),
+  .header .nav-menu__list:has(> .nav-menu__item:nth-child(6):focus-visible) ~ .nav-menu__media > *:nth-child(6) {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* ===== chrome: mobile menu accordion collapse (grid-rows 0fr -> 1fr; JS only toggles .is-open; the doubled class outranks the display:flex open rule above) ===== */
+  .header .nav-menu__acc-row .nav-menu__acc-sub.nav-menu__acc-sub {
+    display: grid;
+    grid-template-rows: 0fr;
+    row-gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    visibility: hidden;
+    transition:
+      grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      padding-top 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      padding-bottom 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s linear 0.45s;
+  }
+  .header .nav-menu__acc-row.is-open .nav-menu__acc-sub.nav-menu__acc-sub {
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: var(--_system---space--v-r);
+    padding-bottom: var(--_system---space--v-s);
+    visibility: visible;
+    transition:
+      grid-template-rows 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      padding-top 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      padding-bottom 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s;
+  }
+  .header .nav-menu__acc-row.is-open .nav-menu__acc-sub-link {
+    opacity: 1;
+  }
+  .header .nav-menu__acc-row.is-open .nav-menu__acc-sub-link:nth-child(2) {
+    transition-delay: 0.06s;
+  }
+  .header .nav-menu__acc-row.is-open .nav-menu__acc-sub-link:nth-child(3) {
+    transition-delay: 0.12s;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .header .nav-menu__acc-row .nav-menu__acc-sub.nav-menu__acc-sub,
+    .header .nav-menu__acc-row.is-open .nav-menu__acc-sub.nav-menu__acc-sub,
+    .header .nav-menu__acc-sub-link {
+      transition: none;
+    }
+  }
+
+  /* ===== home hero: trusted-by marquee below desktop (keyed on .is-marquee; HeroLogoMarqueeInit doubles the roster; ~45px/s per tier) ===== */
+  @media screen and (max-width: 991px) {
+    .hero-statement__logos-clip.is-marquee .hero-statement__logo-stripe {
+      justify-content: flex-start;
+      column-gap: 0;
+      width: max-content;
+      animation: hero-logo-marquee 30s linear infinite;
+    }
+    .hero-statement__logos-clip.is-marquee .hero-statement__logo-slide {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    .hero-statement__logos-clip.is-marquee:hover .hero-statement__logo-stripe,
+    .hero-statement__logos-clip.is-marquee:focus-within .hero-statement__logo-stripe {
+      animation-play-state: paused;
+    }
+    .statement__stat .text-subtitle {
+      font-size: 0.875em;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .hero-statement__logos-clip.is-marquee .hero-statement__logo-stripe {
+      animation-duration: 26s;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .hero-statement__logos-clip.is-marquee .hero-statement__logo-stripe {
+      animation-duration: 18s;
+    }
+  }
+  @keyframes hero-logo-marquee {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(-50%, 0, 0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-statement__logos-clip.is-marquee .hero-statement__logo-stripe {
+      animation: none;
+    }
+  }
+
+  /* ===== section-hero: trusted-by marquee below desktop (same recipe; SectionHeroLogoMarqueeInit; reuses @keyframes hero-logo-marquee) ===== */
+  @media screen and (max-width: 991px) {
+    .section-hero__logos-clip.is-marquee .section-hero__logo-stripe {
+      justify-content: flex-start;
+      column-gap: 0;
+      width: max-content;
+      animation: hero-logo-marquee 30s linear infinite;
+    }
+    .section-hero__logos-clip.is-marquee .section-hero__logo-slide {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    .section-hero__logos-clip.is-marquee:hover .section-hero__logo-stripe,
+    .section-hero__logos-clip.is-marquee:focus-within .section-hero__logo-stripe {
+      animation-play-state: paused;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .section-hero__logos-clip.is-marquee .section-hero__logo-stripe {
+      animation-duration: 26s;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .section-hero__logos-clip.is-marquee .section-hero__logo-stripe {
+      animation-duration: 18s;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .section-hero__logos-clip.is-marquee .section-hero__logo-stripe {
+      animation: none;
+    }
+  }
+  .section-hero__character.mobile {
+    display: hide;
+  }
+  
+ @media (orientation: portrait) {
+   .section-hero__character.mobile {
+     display:block;
+   }
+	.section-hero__character.mobile + .section-hero__character{
+      display:none;
+    }
+   
+ }
+  /* ===== blog pages: article-index filter states + Blog Posts rich text; BlogFilterInit / ArticleMetaInit own the toggles; nav rule scoped to .article-main ===== */
+  .article-card:hover .article-card__title {
+    /* text-decoration: underline; */
+  }
+  .article-index .is-filtered-out,
+  .related-reads .is-filtered-out {
+    display: none !important;
+  }
+  [data-read-time]:not(.is-ready) {
+    display: none;
+  }
+  .page:has(.article-index) .header:not(.is-menu-open) .navbar-alt__links a[href='/blog'],
+  .page:has(.article-main .article-body) .header:not(.is-menu-open) .navbar-alt__links a[href='/blog'] {
+    color: var(--_colors---text--purple, #7a27f8);
+  }
+  .article-body h1,
+  .article-body h2,
+  .article-body h3 {
+    font-family: var(--_primitives---font--body);
+    /* font-size: var(--_system---type--title-s); */
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: var(--_system---space--v-l) 0 var(--_system---space--v-r);
+  }
+  .article-body h4,
+  .article-body h5,
+  .article-body h6 {
+    font-family: var(--_primitives---font--body);
+    /* font-size: var(--_system---type--subtitle); */
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin: var(--_system---space--v-l) 0 var(--_system---space--v-r);
+  }
+  .article-body h1 strong,
+  .article-body h2 strong,
+  .article-body h3 strong,
+  .article-body h4 strong,
+  .article-body h5 strong {
+    font-weight: inherit;
+  }
+  .article-body p {
+    font-family: var(--_primitives---font--body);
+    font-size: var(--_system---type--body-r);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin: 0 0 calc(var(--_system---type--body-r) * 1.4);
+  }
+  .article-body p strong,
+  .article-body li strong {
+    font-weight: 600;
+  }
+  .article-body a {
+    color: var(--_colors---text--purple, #7a27f8);
+    text-decoration: underline;
+  }
+  .article-body ul,
+  .article-body ol {
+    font-family: var(--_primitives---font--body);
+    font-size: var(--_system---type--body-r);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    margin: var(--_system---space--v-r) 0;
+    padding-left: 3.375rem;
+  }
+  .article-body li {
+    margin-bottom: 1.25rem;
+  }
+  .article-body li:last-child {
+    margin-bottom: 0;
+  }
+  .article-body figure,
+  .article-body > div {
+    margin: var(--_system---space--v-l) 0;
+    max-width: 100%;
+  }
+  .article-body > div :is(iframe, canvas) {
+    display: block;
+  }
+  .article-body figure div {
+    border-radius: var(--_system---radius--s);
+    overflow: hidden;
+  }
+  .article-body img {
+    border-radius: var(--_system---radius--s);
+  }
+  .article-body figcaption {
+    font-family: var(--_primitives---font--body);
+    font-size: var(--_system---type--body-s);
+    color: var(--_colors---text--dark-gray, #666666);
+    margin-top: 0.75rem;
+    text-align: center;
+  }
+  .article-body blockquote {
+    font-family: var(--_primitives---font--serif);
+    font-size: var(--_system---type--serif-p);
+    font-weight: 200;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    border-left: 2px solid var(--_colors---border--purple, #7a27f8);
+    margin: var(--_system---space--v-l) 0;
+    padding: 0 0 0 1.5rem;
+  }
+  .article-body iframe {
+    aspect-ratio: 1 / 1;
+    height: auto!important;
+    width: 100%;
+    
+  }
+  .article-body > :first-child {
+    margin-top: 0;
+  }
+  .article-body > :last-child {
+    margin-bottom: 0;
+  }
+  .article-body :is(h1, h2, h3, h4, h5, h6) + * {
+    margin-top: 0;
+  }
+
+  /* ===== case-study template: empty-state collapse + body media; :has() may be chained, never nested; the :empty variant covers the prop-forwarded statement ===== */
+  .case-content .w-dyn-bind-empty {
+    display: none;
+  }
+  .case-content .case-tabs__quote:has(> .w-dyn-bind-empty),
+  .case-content .case-content__block:has(.w-dyn-bind-empty) {
+    display: none;
+  }
+  .case-content:has(> .article-body.w-dyn-bind-empty):has(> .case-tabs__quote > .case-tabs__quote-name.w-dyn-bind-empty) {
+    display: none;
+  }
+  .benefits:has(.statement-cards__intro.w-dyn-bind-empty),
+  .benefits:has(p.statement-cards__intro:empty) {
+    display: none;
+  }
+  .case-hero .play-btn.w-dyn-bind-empty,
+  .case-hero a.play-btn:not([href]),
+  .case-hero a.play-btn[href='#'],
+  .case-hero a.play-btn[href=''] {
+    display: none;
+  }
+  .case-content .article-body figure iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    display: block;
+  }
+  .case-content .article-body figure.w-richtext-figure-type-video {
+    height: auto;
+  }
+  .case-content .article-body figure.w-richtext-figure-type-video > div {
+    display: block;
+  }
+  .case-content .article-body figure.w-richtext-figure-type-video iframe {
+    position: relative;
+  }
+  .case-content .article-body .w-embed video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ===== chrome: mobile accordion state glyph (+ / en dash on the two pane rows; rides the same .is-open) ===== */
+  @media (max-width: 767px) {
+    .header .nav-menu__acc-link[data-acc] {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header .nav-menu__acc-link[data-acc]::after {
+      content: '+';
+    }
+    .header .nav-menu__acc-row.is-open .nav-menu__acc-link[data-acc]::after {
+      content: '\2013';
+    }
+  }
+
+  /* ===== section: why-us + awards (About) narrow tiers: wall is one wrapping flex row four slots wide, 3/4/3 rows made by insetting first and last slot; cycle 7 counted per Collection List at <=991, cycle 5 at <=479 (724:10947, 767:17323); awards tabs hug their label ===== */
+  @media (max-width: 991px) {
+    .awards .tab {
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+    .why-us__grid-cms > :nth-child(1) .why-us__disc-slot:nth-child(1) {
+      margin-left: 6.4rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(7n + 1) {
+      margin-right: 6.4rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(7n + 6) {
+      margin-left: 6.4rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(7n + 1) {
+      margin-left: 6.4rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(7n + 3) {
+      margin-right: 6.4rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .why-us__grid-cms > :nth-child(1) .why-us__disc-slot:nth-child(1) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(7n + 1) {
+      margin-right: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(7n + 6) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(7n + 1) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(7n + 3) {
+      margin-right: 5.2rem;
+    }
+  }
+  @media (max-width: 479px) {
+    .why-us__grid-cms > :nth-child(1) .why-us__disc-slot:nth-child(1) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(1) .why-us__disc-slot:nth-child(2) {
+      margin-right: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(n),
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(n) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(5n + 4) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(2) .why-us__disc-slot:nth-child(5n + 5) {
+      margin-right: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(5n + 1) {
+      margin-left: 5.2rem;
+    }
+    .why-us__grid-cms > :nth-child(4) .why-us__disc-slot:nth-child(5n + 2) {
+      margin-right: 5.2rem;
+    }
+    .values-list__list > .value-row:first-child .value-row__number-text {
+      font-size: 2rem;
+    }
+  }
+
+  /* ===== section-hero: title reveal (hidden until bigtextinit sets .is-fitted; the 0s delayed keyframe is a no-JS failsafe, not motion) ===== */
+  .section-hero__title-text {
+    visibility: hidden;
+    animation: section-hero-title-failsafe 0s 2.5s forwards;
+  }
+  .section-hero__title-text.is-fitted {
+    visibility: visible;
+    animation: none;
+  }
+  @keyframes section-hero-title-failsafe {
+    to {
+      visibility: visible;
+    }
+  }
+
+  /* ===== case-hero film (vimeoheroinit mounts the SDK player under the poster at z -1; .is-played hides poster + button, button returns on keyboard focus) ===== */
+  .case-hero__cover.js-vimeo {
+    cursor: pointer;
+  }
+  .case-hero__player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .case-hero__cover.is-played .case-hero__cover-img-el,
+  .case-hero__cover.is-played .play-btn {
+    opacity: 0;
+  }
+  .case-hero__cover.is-played .play-btn:focus-visible {
+    opacity: 1;
+  }
+
+  /* ===== testimonial film (each testimonial-thumbnail is a vimeoheroinit root on the case-hero contract; empty speaker fields collapse on :empty) ===== */
+  .testimonial-thumb__media.js-vimeo {
+    cursor: pointer;
+  }
+  .testimonial-thumb__player iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .testimonial-thumb__media.is-played :is(.testimonial-thumb__cover,.play-btn,.showreel__heading) {
+    opacity: 0;
+  }
+  .testimonial-thumb__media.is-played .play-btn:focus-visible {
+    opacity: 1;
+  }
+  .testimonial-thumb__person > :empty {
+    display: none;
+  }
+
+  /* ===== film embed settings (each film keeps its Vimeo preset; while played the hidden poster/button let the pointer through and the mount rises to z 1 so Vimeo's controls work) ===== */
+  .case-hero__cover.is-played .case-hero__cover-img-el,
+  .case-hero__cover.is-played .play-btn,
+  .testimonial-thumb__media.is-played :is(.testimonial-thumb__cover,.play-btn,.showreel__heading) {
+    pointer-events: none;
+  }
+  .case-hero__cover.is-played .play-btn:focus-visible,
+  .testimonial-thumb__media.is-played .play-btn:focus-visible {
+    pointer-events: auto;
+  }
+  .case-hero__cover.is-played .case-hero__player,
+  .testimonial-thumb__media.is-played .testimonial-thumb__player {
+    z-index: 1;
+  }
+  /* ===== film loading state (2026-09-15 feedback: a click shows the embed at once; vimeoheroinit warms the player as the root scrolls into view and sets .is-loading from the click until Vimeo reports play, pause, ended, or refuses the embed) ===== */
+  .case-hero__cover.is-loading .case-hero__cover-img-el,
+  .case-hero__cover.is-loading .play-btn,
+  .testimonial-thumb__media.is-loading :is(.testimonial-thumb__cover,.play-btn,.showreel__heading) {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .case-hero__cover.is-loading .case-hero__player,
+  .testimonial-thumb__media.is-loading .testimonial-thumb__player {
+    z-index: 1;
+    background-color: var(--_colors---fill--dark);
+  }
+	/* ===== film sound button (full-width films autoplay muted; the button shows only while a played film is muted, muting again is Vimeo's own control; notes in scripts/vimeo-hero.md) ===== */
+  .js-vimeo [data-vimeo-sound] {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s, visibility 0s 0.3s;
+  }
+  .js-vimeo.is-played.is-muted [data-vimeo-sound] {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s;
+  }
+  .vimeo-sound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: clamp(5vw, 10em, 20vw);
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(0 0 0 / 0.55);
+    color: #fff;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+  }
+  .vimeo-sound::before {
+    content: "";
+    position: absolute;
+    inset: 30%;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 5 6 9H2v6h4l5 4z' fill='%23000'/%3E%3Cpath d='m22 9-6 6M16 9l6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M11 5 6 9H2v6h4l5 4z' fill='%23000'/%3E%3Cpath d='m22 9-6 6M16 9l6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+  }
+  .vimeo-sound:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  /* ===== slider-nav lock (Ilya 2026-09-08: no arrows when every card is in view; sliderinit 2.1.0 sets .is-locked on a [data-slider] root whose track does not overflow; the :has() line also drops a wrapper that holds nothing but the nav) ===== */
+  [data-slider].is-locked .slider-nav,
+  [data-slider].is-locked :has(> .slider-nav:only-child) {
+    display: none;
+  }
+
+  /*Privacy Policy Table*/
+  .privacy-vendors {
+    width: 100%;
+  }
+  .privacy-vendors th {
+    text-align: left;
+  }
+</style></div>
+<nav aria-label="Main" class="header__bar">
+  <div class="navbar__cell">
+    <div class="navbar-alt__links">
+      <a href="/work" class="text-navlink is-wide-only">Work</a>
+      <a href="/about-us" class="text-navlink is-wide-only">About</a>
+      <a href="/#services" class="text-navlink is-wide-only">Services</a>
+      <a href="/#process" class="text-navlink is-wide-only">Process</a>
+      <a href="/#contact" class="text-navlink is-wide-only">Contact</a>
+    </div>
+    <a aria-expanded="false" data-nav-open="menu" aria-haspopup="true" aria-controls="nav-menu-dropdown" href="#nav-menu-dropdown" class="header__menu w-inline-block">
+      <div class="menu-icon"><div class="menu-icon__grid"><div class="menu-icon__dot"></div><div class="menu-icon__dot"></div><div class="menu-icon__dot"></div><div class="menu-icon__dot"></div></div></div>
+      <div class="text-navlink">Menu</div>
+    </a>
+    <a aria-label="Close menu" data-nav-close="1" href="#" class="nav-menu__close w-inline-block">
+      <div class="menu-icon is-close"><div class="menu-icon__grid is-close"><div class="menu-icon__dot is-close"></div><div class="menu-icon__dot is-close"></div><div class="menu-icon__dot is-close"></div><div class="menu-icon__dot is-close"></div></div><div class="menu-icon__dot is-close-center"></div></div>
+      <div class="text-navlink is-light">Close</div>
+    </a>
+  </div>
+  <div class="navbar__cell is-brand">
+    <a href="/" class="navbar__lockup-box w-inline-block" aria-label="Omkar Phapal home">
+      <div class="wordmark-lockup">
+        <span class="op-site-wordmark"><span class="op-site-wordmark__dot" aria-hidden="true"></span>OMKAR PHAPAL</span>
+      </div>
+    </a>
+  </div>
+  <div class="navbar__cell is-mail">
+    <a data-nav-close="navform" data-navform-open="bar" aria-haspopup="dialog" aria-expanded="false" aria-controls="nav-form-panel" href="/#contact" class="text-navlink">Let’s Talk</a>
+  </div>
+</nav>
+<div class="nav-menu">
+  <div class="nav-menu__tab-links">
+    <a href="/work" class="text-navlink is-light">Work</a>
+    <a href="/about-us" class="text-navlink is-light">About</a>
+    <a href="/#services" class="text-navlink is-light">Services</a>
+    <a href="/#skills" class="text-navlink is-light">Skills</a>
+    <a href="/#process" class="text-navlink is-light">Process</a>
+    <a href="/#contact" class="text-navlink is-light">Contact</a>
+  </div>
+  <div class="nav-menu__acc">
+    <div class="nav-menu__acc-row"><a href="/" class="text-link-l nav-menu__acc-link">Home</a></div>
+    <div class="nav-menu__acc-row"><a href="/work" class="text-link-l nav-menu__acc-link">Projects &amp; Work</a></div>
+    <div class="nav-menu__acc-row"><a href="/about-us" class="text-link-l nav-menu__acc-link">About Omkar</a></div>
+    <div class="nav-menu__acc-row"><a href="/#services" class="text-link-l nav-menu__acc-link">Services</a></div>
+    <div class="nav-menu__acc-row"><a href="/#skills" class="text-link-l nav-menu__acc-link">Skills &amp; Stack</a></div>
+    <div class="nav-menu__acc-row"><a href="/#process" class="text-link-l nav-menu__acc-link">Work Process</a></div>
+    <div class="nav-menu__acc-row"><a href="/#contact" class="text-link-l nav-menu__acc-link">Contact</a></div>
+  </div>
+  <div id="nav-menu-dropdown" class="nav-menu__dropdown"></div>
+</div>
+<div id="nav-form-scrim" data-navform-close="scrim" class="nav-form__scrim"></div>
+<div id="nav-form-panel" role="dialog" aria-modal="true" aria-labelledby="nav-form-title" class="nav-form">
+  <div class="nav-form__header">
+    <div class="navbar__cell"></div>
+    <div class="navbar__cell is-brand">
+      <a href="/" class="navbar__lockup-box is-form w-inline-block" aria-label="Omkar Phapal home">
+        <div class="wordmark-lockup">
+          <span class="op-site-wordmark"><span class="op-site-wordmark__dot" aria-hidden="true"></span>OMKAR PHAPAL</span>
+        </div>
+      </a>
+    </div>
+    <div class="navbar__cell is-mail">
+      <a data-navform-close="1" href="#" class="nav-form__close w-inline-block">
+        <div class="menu-icon is-close is-dark"><div class="menu-icon__grid is-close is-dark"><div class="menu-icon__dot is-close is-dark"></div><div class="menu-icon__dot is-close is-dark"></div><div class="menu-icon__dot is-close is-dark"></div><div class="menu-icon__dot is-close is-dark"></div></div><div class="menu-icon__dot is-close-center is-dark"></div></div>
+        <div class="text-navlink">Close</div>
+      </a>
+    </div>
+  </div>
+  <div class="nav-form__body-wrap">
+    <div id="nav-form-title" class="text-serif-l nav-form__headline">Start a project conversation and tell me what you want to build.</div>
+    <div class="nav-form__formblock w-form">
+      <form id="nav-contact-form" name="nav-contact-form" data-name="Nav contact form" method="post" class="nav-form__form">
+        <div class="nav-form__body">
+          <div class="nav-form__groups">
+            <div class="nav-form__group">
+              <div id="nf-service-label" class="text-subtitle nav-form__group-label">What can I build for you?</div>
+              <div aria-labelledby="nf-service-label" role="group" class="nav-form__chips">
+                <label class="w-checkbox chip"><input type="checkbox" id="nf-svc-1" name="svc_website" data-name="Website Development" class="w-checkbox-input chip__input"/><span class="text-subtitle chip__label w-form-label">Website Development</span></label>
+                <label class="w-checkbox chip"><input type="checkbox" id="nf-svc-2" name="svc_backend" data-name="Java &amp; Spring Boot Backend" class="w-checkbox-input chip__input"/><span class="text-subtitle chip__label w-form-label">Java &amp; Spring Boot Backend</span></label>
+                <label class="w-checkbox chip"><input type="checkbox" id="nf-svc-3" name="svc_api" data-name="REST APIs &amp; Integration" class="w-checkbox-input chip__input"/><span class="text-subtitle chip__label w-form-label">REST APIs &amp; Integration</span></label>
+                <label class="w-checkbox chip"><input type="checkbox" id="nf-svc-4" name="svc_webapp" data-name="Business Web App" class="w-checkbox-input chip__input"/><span class="text-subtitle chip__label w-form-label">Business Web App</span></label>
+                <label class="w-checkbox chip"><input type="checkbox" id="nf-svc-5" name="svc_maint" data-name="Maintenance &amp; Upgrades" class="w-checkbox-input chip__input"/><span class="text-subtitle chip__label w-form-label">Maintenance &amp; Upgrades</span></label>
+              </div>
+            </div>
+            <div class="nav-form__group">
+              <div id="nf-timeline-label" class="text-subtitle nav-form__group-label">Expected timeline</div>
+              <div aria-labelledby="nf-timeline-label" role="radiogroup" class="nav-form__chips">
+                <label class="chip w-radio"><input type="radio" data-name="Timeline" id="nf-tl-1" name="timeline" class="w-form-formradioinput chip__input w-radio-input" value="2-4 weeks"/><span class="text-subtitle chip__label w-form-label">2–4 weeks</span></label>
+                <label class="chip w-radio"><input type="radio" data-name="Timeline" id="nf-tl-2" name="timeline" class="w-form-formradioinput chip__input w-radio-input" value="1-3 months"/><span class="text-subtitle chip__label w-form-label">1–3 months</span></label>
+                <label class="chip w-radio"><input type="radio" data-name="Timeline" id="nf-tl-3" name="timeline" class="w-form-formradioinput chip__input w-radio-input" value="3-6 months"/><span class="text-subtitle chip__label w-form-label">3–6 months</span></label>
+                <label class="chip w-radio"><input type="radio" data-name="Timeline" id="nf-tl-4" name="timeline" class="w-form-formradioinput chip__input w-radio-input" value="Flexible"/><span class="text-subtitle chip__label w-form-label">Flexible</span></label>
+                <label class="chip w-radio"><input type="radio" data-name="Timeline" id="nf-tl-5" name="timeline" class="w-form-formradioinput chip__input w-radio-input" value="Not sure"/><span class="text-subtitle chip__label w-form-label">Not sure</span></label>
+              </div>
+            </div>
+          </div>
+          <div class="nav-form__fields">
+            <div class="nav-form__grid">
+              <div class="field"><input class="text-cta field__input w-input" maxlength="100" name="name" data-name="Name" placeholder="Your name" type="text" id="nf-name" required=""/><label for="nf-name" class="text-cta field__label">Name</label><div class="text-body-s field__error">Please enter your name</div></div>
+              <div class="field"><input class="text-cta field__input w-input" maxlength="254" name="email" data-name="Email" placeholder="you@example.com" type="email" id="nf-email" required=""/><label for="nf-email" class="text-cta field__label">Email</label><div class="text-body-s field__error">Please enter a valid email</div></div>
+              <div class="field"><input class="text-cta field__input w-input" maxlength="40" name="phone" data-name="Phone number" placeholder="Optional" type="tel" id="nf-phone"/><label for="nf-phone" class="text-cta field__label">Phone (optional)</label></div>
+              <div class="field"><input class="text-cta field__input w-input" maxlength="150" name="business_name" data-name="Company" placeholder="Company or business (optional)" type="text" id="nf-company"/><label for="nf-company" class="text-cta field__label">Company (optional)</label></div>
+            </div>
+            <div class="op-field-row">
+              <label>Budget range (optional)
+                <select name="budget" data-name="Budget">
+                  <option value="">Select a budget range</option>
+                  <option value="Under ₹25,000 / $300">Under ₹25,000 / $300</option>
+                  <option value="₹25,000 – ₹75,000 / $300 – $900">₹25,000 – ₹75,000 / $300 – $900</option>
+                  <option value="₹75,000+ / $900+">₹75,000+ / $900+</option>
+                  <option value="Prefer to discuss">Prefer to discuss scope first</option>
+                </select>
+              </label>
+            </div>
+            <div class="field is-area nav-form__message">
+              <textarea required="" placeholder="Describe your project goals, features, and timeline" maxlength="5000" id="nf-message" name="message" data-name="Message" class="text-cta field__input w-input"></textarea>
+              <label for="nf-message" class="text-cta field__label">Project description</label>
+              <div class="text-body-s field__error">Please describe your project</div>
+            </div>
+            <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+            <input type="hidden" name="project_brief" value=""/>
+          </div>
+          <div class="form-submit is-start">
+            <div class="form-submit__box"><span class="text-cta">Send inquiry</span></div>
+            <div class="form-submit__icon"><span class="text-cta">→</span></div>
+            <input type="submit" data-wait="Sending..." class="form-submit__btn w-button" value="Send inquiry"/>
+          </div>
+        </div>
+      </form>
+      <div class="w-form-done op-form-feedback op-form-feedback--done" style="display:none;"></div>
+      <div class="w-form-fail op-form-feedback op-form-feedback--fail" style="display:none;"></div>
+    </div>
+  </div>
+</div>
+</header>
+
+<section class="op-section op-section--tint op-case-hero">
+  <div class="op-section__inner">
+    <nav class="op-case-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> <span aria-hidden="true">/</span>
+      <a href="/work">Projects</a> <span aria-hidden="true">/</span>
+      <span>DependencyX-Ray Pro</span>
+    </nav>
+    <span class="op-project-card__cat">Full-Stack</span>
+    <h1 class="op-section__title" style="margin-top:0.85rem;font-size:clamp(2.2rem,4.8vw,4rem);">DependencyX-Ray Pro</h1>
+    <p class="op-section__subtitle">A full-stack web application that scans uploaded Java projects (ZIP, standalone pom.xml or Git repo) and reports vulnerable direct and transitive dependencies with evidence-backed upgrade advisories.</p>
+    <div class="op-hero-actions" style="margin-top:1.5rem;">
+      
+      
+      <a href="/#contact" class="op-btn op-btn--secondary">Discuss a Similar Project</a>
+    </div>
+    <p class="op-editable-note" style="margin-top:1.25rem;">Project links &amp; screenshots can be added in site-config.js and project/dependency-x-ray-pro.html once hosted publicly.</p>
+  </div>
+</section>
+
+<section class="op-section op-section--white">
+  <div class="op-section__inner">
+    <div class="op-case-detail-grid">
+      <article class="op-detail-card" data-op-reveal>
+        <h2>Problem It Solves</h2>
+        <p>Training institutes and cohorts often juggle disconnected spreadsheets for attendance, assignments, assessments, and placement records.</p>
+      </article>
+      <article class="op-detail-card" data-op-reveal>
+        <h2>Solution &amp; Architecture</h2>
+        <p>Designed modular Java and Spring Boot services behind a centralized API gateway with React views, Kafka event streams, Redis caching, and MySQL persistence.</p>
+      </article>
+      <article class="op-detail-card" data-op-reveal>
+        <h2>Key Features</h2>
+        <ul style="padding-left:1.2rem;margin:0;display:flex;flex-direction:column;gap:0.45rem;"><li>Centralized API gateway routing across modular services</li><li>Course learning, assignment, and assessment modules</li><li>Attendance tracking and student progress analytics</li><li>Dedicated placement module for cohort readiness</li></ul>
+      </article>
+      <article class="op-detail-card" data-op-reveal>
+        <h2>Technologies Used</h2>
+        <div class="op-tags"><span>Java</span><span>Spring Boot</span><span>REST APIs</span><span>React</span><span>MySQL</span><span>Kafka</span><span>Redis</span><span>Docker</span><span>Kubernetes</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="op-section op-section--white">
+  <div class="op-section__inner">
+    <div class="op-section__header" data-op-reveal>
+      <div>
+        <p class="op-section__eyebrow">Contact</p>
+        <h2 class="op-section__title">Let’s Work Together</h2>
+        <p class="op-section__subtitle">Have a website, Spring Boot backend, REST API, or business application in mind? Share a few details and I will reply with a practical next step.</p>
+      </div>
+    </div>
+    <div class="op-contact-layout">
+      <div data-op-reveal>
+        <div class="op-availability-badge">
+          <span class="op-availability-dot" aria-hidden="true"></span>
+          <span data-op-availability-label>Available for freelance projects</span>
+        </div>
+        <div class="op-contact-direct">
+          <div class="op-contact-row">
+            <div>
+              <span class="op-contact-row__label">Email</span>
+              <a href="mailto:Omphapal181@gmail.com">Omphapal181@gmail.com</a>
+            </div>
+            <button type="button" class="op-copy-btn" data-op-copy="Omphapal181@gmail.com">Copy email</button>
+          </div>
+          <div class="op-contact-row">
+            <div>
+              <span class="op-contact-row__label">Phone / WhatsApp</span>
+              <a href="tel:+918208497838">+91 82084 97838</a>
+            </div>
+            <a class="op-copy-btn" href="https://wa.me/918208497838?text=Hello%20Omkar%2C%20I%20would%20like%20to%20discuss%20a%20freelance%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+          <div class="op-contact-row">
+            <div>
+              <span class="op-contact-row__label">Profiles</span>
+              <a href="https://github.com/omphapal" target="_blank" rel="noopener noreferrer">GitHub (@omphapal)</a> ·
+              <a href="https://linkedin.com/in/omkarphapal01" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+          </div>
+          <div class="op-contact-row">
+            <div>
+              <span class="op-contact-row__label">Location</span>
+              <span>Pune, Maharashtra, India (Remote Freelance Worldwide)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="op-contact-card w-form" data-op-reveal>
+        <form id="email-form" name="email-form" data-name="Contact form" method="post" novalidate="">
+          <div class="op-form-grid">
+            <div class="op-field">
+              <label for="cf-name">Name *</label>
+              <input id="cf-name" name="name" data-name="Name" type="text" maxlength="100" placeholder="Your full name" autocomplete="name" required=""/>
+            </div>
+            <div class="op-field">
+              <label for="cf-email">Email *</label>
+              <input id="cf-email" name="email" data-name="Email" type="email" maxlength="254" placeholder="you@example.com" autocomplete="email" required=""/>
+            </div>
+            <div class="op-field">
+              <label for="cf-type">Project type</label>
+              <select id="cf-type" name="project_type" data-name="Project type">
+                <option value="">Select project type</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Java &amp; Spring Boot Backend">Java &amp; Spring Boot Backend</option>
+                <option value="REST API Development &amp; Integration">REST API Development &amp; Integration</option>
+                <option value="Business Web Application">Business Web Application</option>
+                <option value="Database Design &amp; SQL">Database Design &amp; SQL</option>
+                <option value="Website Improvements &amp; Maintenance">Website Improvements &amp; Maintenance</option>
+              </select>
+            </div>
+            <div class="op-field">
+              <label for="cf-budget">Budget range</label>
+              <select id="cf-budget" name="budget" data-name="Budget">
+                <option value="">Select budget range</option>
+                <option value="Under ₹25,000 / $300">Under ₹25,000 / $300</option>
+                <option value="₹25,000 – ₹75,000 / $300 – $900">₹25,000 – ₹75,000 / $300 – $900</option>
+                <option value="₹75,000+ / $900+">₹75,000+ / $900+</option>
+                <option value="Prefer to discuss">Prefer to discuss scope first</option>
+              </select>
+            </div>
+            <div class="op-field">
+              <label for="cf-timeline">Expected timeline</label>
+              <select id="cf-timeline" name="timeline" data-name="Timeline">
+                <option value="">Select timeline</option>
+                <option value="2–4 weeks">2–4 weeks</option>
+                <option value="1–3 months">1–3 months</option>
+                <option value="3–6 months">3–6 months</option>
+                <option value="Flexible">Flexible</option>
+              </select>
+            </div>
+            <div class="op-field">
+              <label for="cf-company">Company / Business (optional)</label>
+              <input id="cf-company" name="company" data-name="Company" type="text" maxlength="150" placeholder="Business or organization" autocomplete="organization"/>
+            </div>
+            <div class="op-field op-field--full">
+              <label for="cf-message">Project description *</label>
+              <textarea id="cf-message" name="message" data-name="Message" maxlength="5000" placeholder="Tell me what you want to build, key features, and any links or deadlines." required=""></textarea>
+            </div>
+          </div>
+          <label class="op-hidden">Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"/></label>
+          <input type="hidden" name="project_brief" value=""/>
+          <div style="margin-top: 1.25rem;">
+            <button type="submit" class="op-btn op-btn--primary">Send Project Inquiry →</button>
+          </div>
+        </form>
+        <div class="w-form-done op-form-feedback op-form-feedback--done" style="display:none;"></div>
+        <div class="w-form-fail op-form-feedback op-form-feedback--fail" style="display:none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__cta">
+    <div class="footer__cta-box">
+      <div class="footer__cta-title">
+        <div class="text-serif-p">Have a project in mind?</div>
+        <div class="text-serif-p">Let’s build something practical.</div>
+      </div>
+      <div class="footer__cta-list">
+        <a data-wf--email-link--variant="light" href="mailto:Omphapal181@gmail.com?subject=Freelance%20Project%20Inquiry" class="text-navlink is-wide-only w-variant-6302cd42-38c8-965c-3a28-f0a62366f1aa">Omphapal181@gmail.com</a>
+        <a href="tel:+918208497838" class="text-navlink is-light is-footer">+91 82084 97838</a>
+      </div>
+    </div>
+  </div>
+  <div class="wordmark-lockup">
+    <span class="op-site-wordmark op-site-wordmark--footer">OMKAR PHAPAL</span>
+  </div>
+  <div class="footer__links">
+    <div class="footer__links-grid">
+      <div class="footer__col">
+        <div class="text-subtitle">Explore</div>
+        <div class="footer__col-list">
+          <a href="/" class="text-navlink is-gray">Home</a>
+          <a href="/work" class="text-navlink is-gray">Projects</a>
+          <a href="/about-us" class="text-navlink is-gray">About me</a>
+          <a href="/#faq" class="text-navlink is-gray">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="text-subtitle">Services</div>
+        <div class="footer__col-list">
+          <a href="/#services" class="text-navlink is-gray">Website Development</a>
+          <a href="/#services" class="text-navlink is-gray">Java &amp; Spring Boot</a>
+          <a href="/#services" class="text-navlink is-gray">REST APIs &amp; SQL</a>
+          <a href="/#services" class="text-navlink is-gray">Business Web Apps</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="text-subtitle">Connect</div>
+        <div class="footer__col-list">
+          <a href="https://github.com/omphapal" target="_blank" rel="noopener noreferrer" class="text-navlink is-gray">GitHub</a>
+          <a href="https://linkedin.com/in/omkarphapal01" target="_blank" rel="noopener noreferrer" class="text-navlink is-gray">LinkedIn</a>
+          <a href="mailto:Omphapal181@gmail.com" class="text-navlink is-gray">Email</a>
+          <a href="/#contact" class="text-navlink is-gray">Contact form</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__meta">
+      <div class="footer__meta-col">Omkar Phapal — Freelance Developer · BCA Graduate · Pune, India</div>
+    </div>
+  </div>
+</footer>
+</div>
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6a8613d3038c16471e17fe66" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/6a8613d3038c16471e17fe66/js/the-digital-panda---26.0ea824a0.6e06792e6742844d.js" type="text/javascript" integrity="sha384-5OWkMJc8EtbtWiCTCeCxe0cpJd4kVDsUnXVaO890RhGN27uMlkmueNkGyLQnh/oQ" crossorigin="anonymous"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js" type="text/javascript"></script>
+<script src="https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js" integrity="sha384-JiF4eFN9V3I2Fry7TzFM3XKdq0P3abiVxpOeHjGz4cwvas+uNg6pFWVmuD6MKXqG" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lenis@1.3.25/dist/lenis.min.js"></script>
+<script src="https://s3.us-west-2.amazonaws.com/files.thedigitalpanda.com/tdp26/main/index_bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bigtext@1.0.1/dist/bigtext.js" integrity="sha384-zKWghwliu5Zw5eie9UiTv6MmHlYjQw77GCDjK93hMRvdV4JCS0hh06zAUUXVkbvS" crossorigin="anonymous"></script>
+<script>
+// Count Elements 
+  function countElements(selectors) {
+  selectors.forEach(selector => {
+    const parents = new Set([...document.querySelectorAll(selector)].map(el => el.parentElement));
+    parents.forEach(parent => {
+      let count = 0, prevTop = 0;
+      [...parent.children].filter(child => child.matches(selector)).forEach((el, i) => {
+        const top = el.getBoundingClientRect().top;
+        if (i > 0 && top - prevTop > 7) count = 0;
+        el.style.setProperty('--index', count++);
+        prevTop = top;
+      });
+    });
+  });
+}
+
+function inView(selectors, className = "start", start = 0.8) {
+  const pending = new Set(document.querySelectorAll(selectors.join(",")));
+  if (!pending.size) return () => {};
+
+  let observer, height, frame = 0, initial = true;
+
+  const stop = () => {
+    observer?.disconnect();
+    observer = null;
+    pending.clear();
+    cancelAnimationFrame(frame);
+    window.removeEventListener("resize", resize);
+  };
+
+  const update = () => {
+    frame = 0;
+    const nextHeight = document.documentElement.clientHeight;
+    if (!pending.size || nextHeight === height) return;
+
+    height = nextHeight;
+    observer?.disconnect();
+
+    observer = new IntersectionObserver((entries, current) => {
+      if (current !== observer) return;
+
+      for (const { target, isIntersecting } of entries) {
+        if (!isIntersecting || !pending.delete(target)) continue;
+        target.classList.add(className);
+        current.unobserve(target);
+      }
+
+      if (!pending.size) stop();
+      else if (initial) {
+        initial = false;
+        height = undefined;
+        update();
+      }
+    }, {
+      rootMargin: `0px 0px ${initial ? 0 : -height * (1 - start)}px 0px`
+    });
+
+    pending.forEach(element => observer.observe(element));
+  };
+
+  const resize = () => {
+    if (!frame) frame = requestAnimationFrame(update);
+  };
+
+  window.addEventListener("resize", resize);
+  update();
+
+  return stop;
+}
+
+const COUNT_ELEMENTS = [".case-item__thumb"];
+const initInView = () => inView(COUNT_ELEMENTS, "start", 0.9);
+
+if (document.readyState === "complete") {
+  initInView();
+} else {
+  window.addEventListener("load", initInView, { once: true });
+}
+countElements(COUNT_ELEMENTS);
+ //bigtext 
+</script>
+<script src="/site-config.js"></script>
+<script src="/enhancements.js" defer></script>
+<script defer src="/contact-api.js"></script>
+</body>
+</html>
